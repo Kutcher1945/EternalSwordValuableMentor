@@ -37,7 +37,7 @@ services:
       dockerfile: Dockerfile.events_fr
     command: python -u events_insert_fr.py
     environment:
-      - TZ=Asia/Almaty
+      - TZ=Asia/Atyrau
     restart: always
 
   events_lpr:
@@ -47,7 +47,7 @@ services:
       dockerfile: Dockerfile.events_lpr
     command: python -u events_insert_lpr.py
     environment:
-      - TZ=Asia/Almaty
+      - TZ=Asia/Atyrau
     restart: always
 
   events_sa:
@@ -57,7 +57,7 @@ services:
       dockerfile: Dockerfile.events_sa
     command: python -u events_insert_sa.py
     environment:
-      - TZ=Asia/Almaty
+      - TZ=Asia/Atyrau
     restart: always
 
   events_tp:
@@ -67,5 +67,5 @@ services:
       dockerfile: Dockerfile.events_tp
     command: python -u events_insert_tp.py
     environment:
-      - TZ=Asia/Almaty
+      - TZ=Asia/Atyrau
     restart: always
