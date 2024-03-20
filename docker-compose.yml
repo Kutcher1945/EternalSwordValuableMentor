@@ -1,0 +1,71 @@
+version: '3'
+services:
+  cameras:
+    container_name: cameras
+    build:
+      context: .
+      dockerfile: Dockerfile.cameras
+    command: python -u cameras_insert.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always
+
+  place:
+    container_name: place
+    build:
+      context: .
+      dockerfile: Dockerfile.place
+    command: python -u place_insert.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always
+
+  events_ao:
+    container_name: events_ao
+    build:
+      context: .
+      dockerfile: Dockerfile.events_ao
+    command: python -u events_insert_ao.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always
+
+  events_fr:
+    container_name: events_fr
+    build:
+      context: .
+      dockerfile: Dockerfile.events_fr
+    command: python -u events_insert_fr.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always
+
+  events_lpr:
+    container_name: events_lpr
+    build:
+      context: .
+      dockerfile: Dockerfile.events_lpr
+    command: python -u events_insert_lpr.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always
+
+  events_sa:
+    container_name: events_sa
+    build:
+      context: .
+      dockerfile: Dockerfile.events_sa
+    command: python -u events_insert_sa.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always
+
+  events_tp:
+    container_name: events_tp
+    build:
+      context: .
+      dockerfile: Dockerfile.events_tp
+    command: python -u events_insert_tp.py
+    environment:
+      - TZ=Asia/Almaty
+    restart: always

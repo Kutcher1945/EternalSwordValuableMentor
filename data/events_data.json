@@ -1,0 +1,627 @@
+{
+    "pagination": {
+        "cursor": "eyJ0cyI6MTcxMDUwMzEyOTkwNjAwMSwiaWQiOiI4NWY1MTEyMC1lMmMxLTExZWUtOWE5OS0yZTRjNDcyMjVjNjUifQ=="
+    },
+    "events": [
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503179796,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/a3b1ad40-e2c1-11ee-8920-bcce159f7bff.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvYTNiMWFkNDAtZTJjMS0xMWVlLTg5MjAtYmNjZTE1OWY3YmZmLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.3FJtRNsCZo4jh0gBRRFkh_-u5i_-OpEXQOqrbu8oABE",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "a3b1ad40-e2c1-11ee-8920-bcce159f7bff",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503179794,
+                "detection": [
+                    0.5947916507720947,
+                    0.41287878155708313,
+                    0.6625000238418579,
+                    0.5568181872367859
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-103",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503179487,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/a38286f0-e2c1-11ee-aa7f-23760ea875f2.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvYTM4Mjg2ZjAtZTJjMS0xMWVlLWFhN2YtMjM3NjBlYTg3NWYyLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.rdDfIHOULJWO3H1gDRfDSLtgQQkBCzj83VfZ3dE5z0Y",
+            "streamserver_id": "f6a8fe52-a760-474f-b0ec-c905db180482",
+            "stream_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+            "event_id": "a38286f0-e2c1-11ee-aa7f-23760ea875f2",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503179485,
+                "detection": [
+                    0.3635416626930237,
+                    0.2348484843969345,
+                    1.0010416507720947,
+                    0.9734848737716675
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503176834,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/a1edb620-e2c1-11ee-8527-c70a6533c945.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvYTFlZGI2MjAtZTJjMS0xMWVlLTg1MjctYzcwYTY1MzNjOTQ1LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.1laId3TxmPfN4iO0999q17IcdyuetTdXUq3qVGrv3P4",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "a1edb620-e2c1-11ee-8527-c70a6533c945",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503176832,
+                "detection": [
+                    0.06875000149011612,
+                    0.9204545617103577,
+                    0.20416666567325592,
+                    0.9905303120613098
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-103",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503173316,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/9fd4e840-e2c1-11ee-b091-3d27c767ea23.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOWZkNGU4NDAtZTJjMS0xMWVlLWIwOTEtM2QyN2M3NjdlYTIzLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.tRzw3v_YIpwVR6-pAxchn1cusWGWqO_SqTBZ6eCw4Ds",
+            "streamserver_id": "f6a8fe52-a760-474f-b0ec-c905db180482",
+            "stream_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+            "event_id": "9fd4e840-e2c1-11ee-b091-3d27c767ea23",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503173314,
+                "detection": [
+                    0.36666667461395264,
+                    0.09090909361839294,
+                    0.390625,
+                    0.11174242198467255
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503162198,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/99346f60-e2c1-11ee-bcf5-2fb95cbfdbf7.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOTkzNDZmNjAtZTJjMS0xMWVlLWJjZjUtMmZiOTVjYmZkYmY3LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.eUk71vGdP0iQzsHVdxzK9c4CfWUuqOHSWrwKL8Ei35A",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "99346f60-e2c1-11ee-bcf5-2fb95cbfdbf7",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503162194,
+                "detection": [
+                    0.78125,
+                    0.013257576152682304,
+                    0.8489583134651184,
+                    0.08143939077854156
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503159295,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/977978f0-e2c1-11ee-9240-48c52c6b31b2.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOTc3OTc4ZjAtZTJjMS0xMWVlLTkyNDAtNDhjNTJjNmIzMWIyLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.UeVteYmXYYrypGJEEtb2jGfm_SE-dVubTu70-CKP7jo",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "977978f0-e2c1-11ee-9240-48c52c6b31b2",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503159293,
+                "detection": [
+                    0.6979166865348816,
+                    0.13636364042758942,
+                    0.7208333611488342,
+                    0.2594696879386902
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503153332,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/93eb9740-e2c1-11ee-9af5-1a5905c9cc4c.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOTNlYjk3NDAtZTJjMS0xMWVlLTlhZjUtMWE1OTA1YzljYzRjLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.4nb2IL4oVZMfe9oIxbOdnL-NKFEa_CslQyTQrYtmSSI",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "93eb9740-e2c1-11ee-9af5-1a5905c9cc4c",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503153329,
+                "detection": [
+                    0.875,
+                    0.07386363297700882,
+                    0.9677083492279053,
+                    0.125
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503150359,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/9225f270-e2c1-11ee-bc9f-b7300316cb19.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOTIyNWYyNzAtZTJjMS0xMWVlLWJjOWYtYjczMDAzMTZjYjE5LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.ICt-pwY3OY9MgzfGVgsFR3ONkq4FVbFNXe5Tvk70eSc",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "9225f270-e2c1-11ee-bc9f-b7300316cb19",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503150357,
+                "detection": [
+                    0.01979166641831398,
+                    0.0,
+                    0.6333333253860474,
+                    0.21780303120613098
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503150359,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/9225f270-e2c1-11ee-b5b6-da7b9a1d9fe8.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOTIyNWYyNzAtZTJjMS0xMWVlLWI1YjYtZGE3YjlhMWQ5ZmU4LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.gxwJJsvD_aUMmcVmzB5B6egsPxW5ylL1Vmh617nf1XU",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "9225f270-e2c1-11ee-b5b6-da7b9a1d9fe8",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503150357,
+                "detection": [
+                    0.0,
+                    0.8352272510528564,
+                    0.20520833134651184,
+                    0.9943181872367859
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503144520,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/8eaafc80-e2c1-11ee-b405-fb2164b7da79.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOGVhYWZjODAtZTJjMS0xMWVlLWI0MDUtZmIyMTY0YjdkYTc5LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.qBTfs0aH4utKTSdLBbJXSYMNmiGTmr8RJtRYAtadnGs",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "8eaafc80-e2c1-11ee-b405-fb2164b7da79",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503144517,
+                "detection": [
+                    0.07395832985639572,
+                    0.9507575631141663,
+                    0.20000000298023224,
+                    0.9867424368858337
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503144520,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/8eaafc80-e2c1-11ee-9ccf-97d7e5ac17db.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOGVhYWZjODAtZTJjMS0xMWVlLTljY2YtOTdkN2U1YWMxN2RiLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.qp1Dbws8uyV5wj2E8I7kXrFjsnFadSNd4TmTQJQD9fw",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "8eaafc80-e2c1-11ee-9ccf-97d7e5ac17db",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503144517,
+                "detection": [
+                    0.8770833611488342,
+                    0.14962121844291687,
+                    0.9083333611488342,
+                    0.16856060922145844
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-103",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503142305,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/8d590110-e2c1-11ee-82cd-2a317162a1e2.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOGQ1OTAxMTAtZTJjMS0xMWVlLTgyY2QtMmEzMTcxNjJhMWUyLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.UNqqCL-FAm1P-fapwWe-3oKxKC9oVtXVIRiwyYQo0mk",
+            "streamserver_id": "f6a8fe52-a760-474f-b0ec-c905db180482",
+            "stream_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+            "event_id": "8d590110-e2c1-11ee-82cd-2a317162a1e2",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503142302,
+                "detection": [
+                    0.3114583194255829,
+                    0.07954545319080353,
+                    0.4104166626930237,
+                    0.12878787517547607
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503141615,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/8cefb7f0-e2c1-11ee-8ff8-e43097bdc468.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOGNlZmI3ZjAtZTJjMS0xMWVlLThmZjgtZTQzMDk3YmRjNDY4LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.Q6naoc69j_TWAEwmb8B4Zf7bJ8NASpAMVeD015s0Pxc",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "8cefb7f0-e2c1-11ee-8ff8-e43097bdc468",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503141613,
+                "detection": [
+                    0.0,
+                    0.935606062412262,
+                    0.06562499701976776,
+                    0.9962121248245239
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503138738,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/8b38b920-e2c1-11ee-9729-6c41486c32ec.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOGIzOGI5MjAtZTJjMS0xMWVlLTk3MjktNmM0MTQ4NmMzMmVjLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.HTachMAMrb2kWZZqKuFbOlsXFSwY_S8BOV33FenRrjo",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "8b38b920-e2c1-11ee-9729-6c41486c32ec",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503138736,
+                "detection": [
+                    0.7770833373069763,
+                    0.3162878751754761,
+                    0.824999988079071,
+                    0.4905303120613098
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503138738,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/8b38b920-e2c1-11ee-9115-23bd89ba5c56.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvOGIzOGI5MjAtZTJjMS0xMWVlLTkxMTUtMjNiZDg5YmE1YzU2LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.KVwGGIU4WPVi29xLkyZQr02fSFNoGK8ghAHx8QDDFu8",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "8b38b920-e2c1-11ee-9115-23bd89ba5c56",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503138736,
+                "detection": [
+                    0.6552083492279053,
+                    0.25,
+                    0.6729166507720947,
+                    0.29356059432029724
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-103",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503133101,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/87dc95d0-e2c1-11ee-8125-657387c558ac.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvODdkYzk1ZDAtZTJjMS0xMWVlLTgxMjUtNjU3Mzg3YzU1OGFjLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.0SVDrTVHJ9lxGqtAQNsJSdbbzDGtG337qEJDPwMhaq4",
+            "streamserver_id": "f6a8fe52-a760-474f-b0ec-c905db180482",
+            "stream_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+            "event_id": "87dc95d0-e2c1-11ee-8125-657387c558ac",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503133098,
+                "detection": [
+                    0.4489583373069763,
+                    0.0,
+                    0.4729166626930237,
+                    0.07386363297700882
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-103",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503133100,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/87dc6ec0-e2c1-11ee-a3d1-fdf099a7bb97.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvODdkYzZlYzAtZTJjMS0xMWVlLWEzZDEtZmRmMDk5YTdiYjk3LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.pBsUJD96MUg-7JGoBL6wv_KXlZJ82rbT61mNieOuA10",
+            "streamserver_id": "f6a8fe52-a760-474f-b0ec-c905db180482",
+            "stream_id": "f29a7765-b7f5-48bc-aa1f-a8532d887e90",
+            "event_id": "87dc6ec0-e2c1-11ee-a3d1-fdf099a7bb97",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503133098,
+                "detection": [
+                    0.25208333134651184,
+                    0.09848485141992569,
+                    0.30000001192092896,
+                    0.15719696879386902
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503132820,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/87b1b540-e2c1-11ee-a57b-9ddb974e2f1b.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvODdiMWI1NDAtZTJjMS0xMWVlLWE1N2ItOWRkYjk3NGUyZjFiLmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.-msC2IzP0bM1TnVpu-quzNvy7wlJAQZolQozq37wvDw",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "87b1b540-e2c1-11ee-a57b-9ddb974e2f1b",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503132818,
+                "detection": [
+                    0.0,
+                    0.560606062412262,
+                    0.22083333134651184,
+                    0.9962121248245239
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503129906,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/85f51120-e2c1-11ee-ba9c-8b810af82ce8.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvODVmNTExMjAtZTJjMS0xMWVlLWJhOWMtOGI4MTBhZjgyY2U4LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.xkbgHQ06xzBdjLbdc3QQDsMixepBm9WSNiUvuHOgnuQ",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "85f51120-e2c1-11ee-ba9c-8b810af82ce8",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503129904,
+                "detection": [
+                    0.8395833373069763,
+                    0.39393940567970276,
+                    0.893750011920929,
+                    0.6382575631141663
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        },
+        {
+            "origin": {
+                "camera_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+                "camera_name": "Алматы-1 железнодорожный вокзал камера-13",
+                "place_id": 5960,
+                "place_name": "улица Станционная, 1 Алматы-1 железнодорожный вокзал",
+                "place_latitude": 43.341134,
+                "place_longitude": 76.949371,
+                "place_description": "улица Станционная, 1, Алматы"
+            },
+            "ts": 1710503129906,
+            "obsolete": false,
+            "snapshot_url": "https://4a4b75289db8dc22.esvm.kz/s3/esb/2024/3/15/85f51120-e2c1-11ee-9a99-2e4c47225c65.jpeg?ticket=eyJrZXkiOiIyMDI0LzMvMTUvODVmNTExMjAtZTJjMS0xMWVlLTlhOTktMmU0YzQ3MjI1YzY1LmpwZWciLCJ0cyI6MTcxMDUwMzE4MCwidHRsIjo5MDAuMH0.RpUVsoC5ZBIFh_44ksZckThhqGx0V-MyLPqx3YAXoI8",
+            "streamserver_id": "c34ea3c3-10f0-48c3-9783-aea369570846",
+            "stream_id": "88a60953-eac9-49fb-9a0b-56f83c062dea",
+            "event_id": "85f51120-e2c1-11ee-9a99-2e4c47225c65",
+            "event_type": "ao",
+            "event": {
+                "reason": 1,
+                "label": "unknown",
+                "ts": 1710503129904,
+                "detection": [
+                    0.4385416805744171,
+                    0.07386363297700882,
+                    1.0010416507720947,
+                    0.9753788113594055
+                ],
+                "attributes": null,
+                "roi": null
+            }
+        }
+    ]
+}

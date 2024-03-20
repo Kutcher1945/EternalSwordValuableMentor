@@ -1,0 +1,2995 @@
+{
+    "pagination": {
+        "cursor": "eyJuYW1lIjoiT1NUIDUzIn0="
+    },
+    "places": [
+        {
+            "name": "10-\u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d 11\u0430",
+            "description": "11\u0410, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.21866465,
+            "longitude": 76.86676770454568,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 7708,
+            "created_at": "2023-08-22T09:33:49.465558Z",
+            "updated_at": "2023-11-10T04:01:06.830786Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041c\u0430\u0433\u0430\u0437\u0438\u043d\u044b",
+                "parent_id": 10,
+                "id": 277,
+                "path": "10.277"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "10-\u043c\u043a\u0440. 11\u0430, \u0416\u0438\u043b\u043e\u0439 \u0434\u043e\u043c",
+            "description": "10-\u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 11\u0430",
+            "latitude": 43.21866074769997,
+            "longitude": 76.86679547377167,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 416,
+            "created_at": "2022-10-10T05:33:20.231757Z",
+            "updated_at": "2023-12-05T05:49:57.938867Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 3050",
+                    "id": 12
+                }
+            ]
+        },
+        {
+            "name": "\u200b11-\u0439 \u043c\u043a\u0440. 3/1, \u200b\u0411\u0438\u0437\u043d\u0435\u0441-\u0446\u0435\u043d\u0442\u0440 Ayala",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0428\u0430\u043b\u044f\u043f\u0438\u043d\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.221649,
+            "longitude": 76.869756,
+            "cohort_tracking": false,
+            "group_id": 3,
+            "id": 418,
+            "created_at": "2022-10-10T05:33:20.960862Z",
+            "updated_at": "2023-11-09T12:20:08.851425Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u0411\u0438\u0437\u043d\u0435\u0441 \u0446\u0435\u043d\u0442\u0440\u044b",
+                "parent_id": 10,
+                "id": 287,
+                "path": "10.287"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "13 \u0412\u043e\u0435\u043d\u043d\u044b\u0439 \u0433\u043e\u0440\u043e\u0434\u043e\u043a 11, \u0416\u0438\u043b\u043e\u0439 \u0434\u043e\u043c",
+            "description": "\u041e\u0412\u041d 353, 360  13 \u0412\u043e\u0435\u043d\u043d\u044b\u0439 \u0433\u043e\u0440\u043e\u0434\u043e\u043a 11",
+            "latitude": 43.375965,
+            "longitude": 76.990512,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4836,
+            "created_at": "2022-12-29T07:08:52.868265Z",
+            "updated_at": "2023-12-05T11:39:53.787726Z",
+            "plan_count": 0,
+            "camera_count": 3,
+            "category": {
+                "name": "\u0414\u0432\u043e\u0440\u044b \u0438 \u043f\u043e\u0434\u044a\u0435\u0437\u0434\u044b",
+                "parent_id": 4,
+                "id": 28,
+                "path": "4.28"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 3050",
+                    "id": 12
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "18-\u044f \u0443\u043b. 24, \u0427\u0430\u0441\u0442\u043d\u044b\u0439 \u0434\u043e\u043c",
+            "description": "\u041e\u0412\u041d800 \u043c\u043a\u0440.\u0410\u043b\u0430\u0442\u0430\u0443, \u0443\u043b. \u0416\u0443\u043b\u0434\u044b\u0437-1- \u0443\u043b, \u0416\u0443\u043b\u0434\u044b\u0437, \u041e\u0412\u041d 800",
+            "latitude": 43.16793789843976,
+            "longitude": 76.91632460078317,
+            "cohort_tracking": false,
+            "group_id": 44,
+            "id": 7771,
+            "created_at": "2023-10-05T06:58:44.998531Z",
+            "updated_at": "2023-12-05T11:40:05.158134Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 3050",
+                    "id": 12
+                }
+            ]
+        },
+        {
+            "name": "\u200b1-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 64\u0430 \u0421\u0410\u041d\u0410\u0422\u041e\u0420\u041d\u042b\u0419 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u211625",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0416\u0443\u0431\u0430\u043d\u043e\u0432\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.232118,
+            "longitude": 76.849602,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7544,
+            "created_at": "2023-07-18T05:05:38.799912Z",
+            "updated_at": "2023-11-01T11:41:38.595437Z",
+            "plan_count": 2,
+            "camera_count": 16,
+            "category": {
+                "name": "\u0421\u0430\u043d\u0430\u0442\u043e\u0440\u043d\u044b\u0435 \u044f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 238,
+                "path": "19.238"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "1-\u0439 \u043c\u043a\u0440. 81\u0411, \u200b\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0435 \u0437\u0434\u0430\u043d\u0438\u0435",
+            "description": "\u0421\u0430\u0438\u043d\u0430-\u0423\u043b\u0443\u0433\u0431\u0435\u043a\u0430",
+            "latitude": 43.2267,
+            "longitude": 76.845581,
+            "cohort_tracking": false,
+            "group_id": 3,
+            "id": 392,
+            "created_at": "2022-10-10T05:33:12.501278Z",
+            "updated_at": "2023-09-26T06:55:41.946347Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "2-\u0430\u044f \u0411\u0440\u0430\u0442\u0441\u043a\u0430\u044f \u0443\u0433 \u0443\u043b\u0438\u0446\u044b \u0424\u0430\u0434\u0435\u0435\u0432\u0430",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0424\u0430\u0434\u0435\u0435\u0432\u0430, 42, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.263018,
+            "longitude": 76.874834,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 2713,
+            "created_at": "2022-10-24T06:01:40.359273Z",
+            "updated_at": "2023-11-10T05:27:00.447104Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u0414\u0432\u043e\u0440\u044b \u0438 \u043f\u043e\u0434\u044a\u0435\u0437\u0434\u044b",
+                "parent_id": 4,
+                "id": 28,
+                "path": "4.28"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0434\u0432\u043e\u0440\u044b \u0438 \u043f\u043e\u0434\u044a\u0435\u0437\u0434\u044b 4244",
+                    "id": 14
+                }
+            ]
+        },
+        {
+            "name": "\u200b2-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 57 \u041a\u041e\u0420\u0420\u0415\u041a\u0426\u0418\u041e\u041d\u041d\u042b\u0419 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u2116 24",
+            "description": "57, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.235273,
+            "longitude": 76.860636,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7263,
+            "created_at": "2023-07-12T10:05:09.948277Z",
+            "updated_at": "2023-11-01T11:41:25.341783Z",
+            "plan_count": 0,
+            "camera_count": 15,
+            "category": {
+                "name": "\u041a\u043e\u0440\u0440\u0435\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u044f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 237,
+                "path": "19.237"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "2-\u0439 \u043c\u043a\u0440. 55, \u200b\u0416\u0438\u043b\u043e\u0439 \u0434\u043e\u043c",
+            "description": "\u0410\u043b\u0442\u044b\u043d\u0441\u0430\u0440\u0438\u043d\u0430-\u041a\u0443\u0430\u043d\u044b\u0448\u0431\u0430\u0435\u0432\u0430",
+            "latitude": 43.229662,
+            "longitude": 76.858445,
+            "cohort_tracking": false,
+            "group_id": 3,
+            "id": 420,
+            "created_at": "2022-10-10T05:33:21.926682Z",
+            "updated_at": "2023-09-26T06:55:41.946347Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "\u200b2-\u044f \u041c\u043d\u043e\u0433\u043e\u0432\u043e\u0434\u043d\u0430\u044f, 17 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u2116107",
+            "description": "\u041c\u043d\u043e\u0433\u043e\u0432\u043e\u0434\u043d\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 17, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.257192,
+            "longitude": 76.973465,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 6985,
+            "created_at": "2023-06-20T12:44:56.345651Z",
+            "updated_at": "2023-10-27T10:55:08.360831Z",
+            "plan_count": 0,
+            "camera_count": 19,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "\u200b3-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 32\u0430 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u211633",
+            "description": "42, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.223036,
+            "longitude": 76.852225,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7102,
+            "created_at": "2023-07-01T11:58:34.322389Z",
+            "updated_at": "2023-10-27T10:55:20.774391Z",
+            "plan_count": 0,
+            "camera_count": 16,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "3-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 37\u0411 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u211649",
+            "description": "37\u0411, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.225399,
+            "longitude": 76.852587,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7104,
+            "created_at": "2023-07-01T11:58:36.595962Z",
+            "updated_at": "2023-10-27T10:55:35.746480Z",
+            "plan_count": 0,
+            "camera_count": 14,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "4-\u0439 \u043c\u043a\u0440. 26 \u200b\u041c\u0430\u043b\u043e\u044d\u0442\u0430\u0436\u043d\u044b\u0439 \u0436\u0438\u043b\u043e\u0439 \u0434\u043e\u043c",
+            "description": "\u0421\u043a\u0432\u0435\u0440 \u0437\u0430 \u043a\u0438\u043d\u043e\u0442\u0435\u0430\u0442\u0440\u043e\u043c \"\u0421\u0430\u0440\u044b \u0410\u0440\u043a\u0430\" \u0417\u0430\u043f\u0430\u0434\u043d\u0430\u044f",
+            "latitude": 43.228288,
+            "longitude": 76.857494,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 424,
+            "created_at": "2022-10-10T05:33:23.028610Z",
+            "updated_at": "2023-09-19T09:49:36.564606Z",
+            "plan_count": 0,
+            "camera_count": 2,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "4-\u044f \u0443\u043b. 2/1, \u200b\u0441\u043e\u043e\u0440\u0443\u0436\u0435\u043d\u0438\u0435",
+            "description": "\u041e\u0412\u041d 204    \u041f\u0435\u0440\u0435\u0441\u0435\u0447\u0435\u043d\u0438\u0435 \u0443\u043b\u0438\u0446 \u041a\u0435\u043d\u0435\u0441\u0431\u0430\u0435\u0432\u0430 \u0438 \u041a\u044b\u0434\u044b\u0440\u043e\u0432\u0430",
+            "latitude": 43.198373,
+            "longitude": 76.829582,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 3951,
+            "created_at": "2022-12-01T16:41:26.912616Z",
+            "updated_at": "2023-12-05T11:38:32.928332Z",
+            "plan_count": 0,
+            "camera_count": 2,
+            "category": {
+                "name": "\u043a\u0430\u043c\u0435\u0440\u044b \u0421\u0412\u041c",
+                "parent_id": 5,
+                "id": 31,
+                "path": "307.5.31"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 3050",
+                    "id": 12
+                }
+            ]
+        },
+        {
+            "name": "4-\u044f \u0443\u043b. 41, \u0410\u043b\u0430\u0442\u0430\u0443-\u041a\u0443\u0441",
+            "description": "\u041e\u0412\u041d 203    \u041f\u0435\u0440\u0435\u0441\u0435\u0447\u0435\u043d\u0438\u0435 \u0443\u043b\u0438\u0446 \u041a\u0443\u043d\u0430\u0435\u0432\u0430 \u0438 4-\u044f, \u043c\u0430\u0433\u0430\u0437\u0438\u043d \u00ab\u0410\u043b\u0430\u0442\u0430\u0443 \u043a\u0443\u0441\u00bb",
+            "latitude": 43.194626,
+            "longitude": 76.83515,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 3950,
+            "created_at": "2022-12-01T16:41:24.596441Z",
+            "updated_at": "2023-12-05T11:38:32.784572Z",
+            "plan_count": 0,
+            "camera_count": 2,
+            "category": {
+                "name": "\u043a\u0430\u043c\u0435\u0440\u044b \u0421\u0412\u041c",
+                "parent_id": 5,
+                "id": 31,
+                "path": "307.5.31"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 3050",
+                    "id": 12
+                }
+            ]
+        },
+        {
+            "name": "5-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 37\u0430 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u2116154",
+            "description": "\u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d 5-\u0439, 37\u0410, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.232263,
+            "longitude": 76.864574,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7239,
+            "created_at": "2023-07-05T08:47:08.371821Z",
+            "updated_at": "2023-11-01T11:41:59.074052Z",
+            "plan_count": 0,
+            "camera_count": 23,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "5-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 46 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u2116174",
+            "description": "\u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d 5-\u0439, 46, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.231838,
+            "longitude": 76.865205,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7199,
+            "created_at": "2023-07-05T08:47:01.868154Z",
+            "updated_at": "2023-11-01T11:42:07.177676Z",
+            "plan_count": 0,
+            "camera_count": 32,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "5-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 49/1 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u2116135",
+            "description": "\u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d 5-\u0439, 49/1, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.232798,
+            "longitude": 76.862319,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 7265,
+            "created_at": "2023-07-12T10:05:12.218270Z",
+            "updated_at": "2023-11-01T11:42:17.463661Z",
+            "plan_count": 2,
+            "camera_count": 10,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "\u200b5-\u0439 \u043c\u043a\u0440. 40\u0411, \u0430\u0432\u0442\u043e\u0441\u0442\u043e\u044f\u043d\u043a\u0430",
+            "description": "\u0423\u0442\u0435\u0433\u0435\u043d \u0431\u0430\u0442\u044b\u0440\u0430 \u041a\u0443\u0430\u043d\u044b\u0448\u0431\u0430\u0435\u0432\u0430",
+            "latitude": 43.234886,
+            "longitude": 76.863925,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 397,
+            "created_at": "2022-10-10T05:33:14.278241Z",
+            "updated_at": "2023-09-19T09:49:34.161547Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "5 \u043c\u043a\u0440, 49/1, \u042f\u0441\u043b\u0438-\u0441\u0430\u0434 \u2116135",
+            "description": "\u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d 5-\u0439, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.232981,
+            "longitude": 76.862328,
+            "cohort_tracking": false,
+            "group_id": 44,
+            "id": 20696,
+            "created_at": "2024-02-08T12:58:59.849895Z",
+            "updated_at": "2024-02-09T03:37:30.517854Z",
+            "plan_count": 0,
+            "camera_count": 47,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041a\u0421\u0411 \u0434\u0435\u0442.\u0441\u0430\u0434\u044b",
+                    "id": 119
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "6-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 8\u0430 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u211635",
+            "description": "8, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.2204718,
+            "longitude": 76.85534148348009,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7693,
+            "created_at": "2023-07-26T11:44:32.767202Z",
+            "updated_at": "2023-11-01T11:42:26.034586Z",
+            "plan_count": 0,
+            "camera_count": 26,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "7-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 26 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u211636",
+            "description": "26, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.225152,
+            "longitude": 76.862523,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7024,
+            "created_at": "2023-06-22T09:22:54.609516Z",
+            "updated_at": "2023-11-01T11:42:34.583133Z",
+            "plan_count": 2,
+            "camera_count": 16,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "8-\u0439 \u043c\u0438\u043a.37/1 \u0422\u0420\u0426 \"\u041c\u043e\u0441\u043a\u0432\u0430 \u041c\u0435\u0442\u0440\u043e\u043f\u043e\u043b\u0438\u0442\u0435\u043d\"",
+            "description": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0410\u0431\u0430\u044f, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.2275,
+            "longitude": 76.864299,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 1013,
+            "created_at": "2022-10-18T13:39:30.036529Z",
+            "updated_at": "2023-12-16T10:40:50.394330Z",
+            "plan_count": 0,
+            "camera_count": 3,
+            "category": {
+                "name": "\u0422\u043e\u0440\u0433\u043e\u0432\u043e-\u0440\u0430\u0437\u0432\u043b\u0435\u043a\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0446\u0435\u043d\u0442\u0440\u044b",
+                "parent_id": 10,
+                "id": 281,
+                "path": "10.281"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "\u200b8-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 42 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u211639",
+            "description": "42, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.22607015,
+            "longitude": 76.86752057185518,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7699,
+            "created_at": "2023-08-02T10:00:44.225321Z",
+            "updated_at": "2023-11-01T11:42:46.360802Z",
+            "plan_count": 2,
+            "camera_count": 16,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "8-\u0439 \u043c\u043a\u0440. 41/6, Moskva \u0416\u0438\u043b\u043e\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441",
+            "description": "\u0421\u0442\u0430\u043d\u0446\u0438\u044f \u043c\u0435\u0442\u0440\u043e \"\u041c\u043e\u0441\u043a\u0432\u0430\" (1)",
+            "latitude": 43.230604,
+            "longitude": 76.867158,
+            "cohort_tracking": false,
+            "group_id": 3,
+            "id": 398,
+            "created_at": "2022-10-10T05:33:14.551894Z",
+            "updated_at": "2023-09-26T06:55:41.946347Z",
+            "plan_count": 0,
+            "camera_count": 4,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0421\u0412\u041c \u041c\u041c\u0421 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "\u200b9-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 38 \u042f\u0421\u041b\u0418-\u0421\u0410\u0414 \u211642",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0428\u0430\u043b\u044f\u043f\u0438\u043d\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.215301,
+            "longitude": 76.862954,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 7266,
+            "created_at": "2023-07-12T10:05:13.346339Z",
+            "updated_at": "2023-11-01T11:42:53.684098Z",
+            "plan_count": 2,
+            "camera_count": 15,
+            "category": {
+                "name": "\u042f\u0441\u043b\u0438-\u0441\u0430\u0434\u044b",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0413\u043e\u0441 \u0423\u0422\u041e",
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "name": "Alm_MAD72/86_test_ 1 \u0443\u043b. \u0422. \u0411\u0435\u0433\u0438\u043b\u044c\u0434\u0438\u043d\u043e\u0432\u0430 \u0434.2",
+            "description": "\u0422\u0430\u043b\u0433\u0430\u0442 \u0411\u0438\u0433\u0435\u043b\u0434\u0438\u043d\u043e\u0432 \u0443\u043b\u0438\u0446\u0430, 2, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.2462908,
+            "longitude": 76.97489085,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 3882,
+            "created_at": "2022-12-01T16:24:27.134655Z",
+            "updated_at": "2023-11-22T11:50:29.951844Z",
+            "plan_count": 0,
+            "camera_count": 2,
+            "category": {
+                "name": "\u0416\u0438\u043b\u044b\u0435 \u043c\u0430\u0441\u0441\u0438\u0432\u044b",
+                "parent_id": null,
+                "id": 4,
+                "path": "4"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0434\u0432\u043e\u0440\u044b \u0438 \u043f\u043e\u0434\u044a\u0435\u0437\u0434\u044b 4244",
+                    "id": 14
+                }
+            ]
+        },
+        {
+            "name": "K 14",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0421\u0430\u0440\u0441\u0435\u043d\u0431\u0430\u0435\u0432\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.257795875727545,
+            "longitude": 77.00591325650818,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4518,
+            "created_at": "2022-12-29T05:13:14.500577Z",
+            "updated_at": "2023-11-10T04:11:38.924490Z",
+            "plan_count": 0,
+            "camera_count": 2,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041a\u0435\u043d\u0441\u0430\u0439 \u0434\u0430\u0447\u043d\u044b\u0439 \u043c\u0430\u0441\u0441\u0438\u0432",
+                    "id": 117
+                },
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "name": "K 5",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.2535200737285,
+            "longitude": 76.9968117653438,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4504,
+            "created_at": "2022-12-29T05:13:05.673240Z",
+            "updated_at": "2023-11-10T04:11:48.353646Z",
+            "plan_count": 0,
+            "camera_count": 13,
+            "category": {
+                "name": "\u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043a\u0438 \u0438 \u0443\u043b\u0438\u0446\u044b",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041a\u0435\u043d\u0441\u0430\u0439 \u0434\u0430\u0447\u043d\u044b\u0439 \u043c\u0430\u0441\u0441\u0438\u0432",
+                    "id": 117
+                },
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "name": "OST 10",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0411\u0430\u0439\u0442\u0435\u0440\u0435\u043a\u043e\u0432\u0430, 117, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.261485,
+            "longitude": 76.822936,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4540,
+            "created_at": "2022-12-29T06:18:11.018036Z",
+            "updated_at": "2023-10-27T07:15:22.527734Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 102",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0421\u0430\u0438\u043d\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.218187,
+            "longitude": 76.8526,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4633,
+            "created_at": "2022-12-29T06:19:53.172040Z",
+            "updated_at": "2023-10-27T07:15:33.416279Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 103",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0421\u0430\u0438\u043d\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.210324,
+            "longitude": 76.860019,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4634,
+            "created_at": "2022-12-29T06:19:54.288409Z",
+            "updated_at": "2023-10-27T07:15:46.909879Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 104",
+            "description": "\u0410\u043b\u043c\u0430 - \u0410\u0440\u0430\u0441\u0430\u043d, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.087968,
+            "longitude": 76.906661,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4635,
+            "created_at": "2022-12-29T06:19:55.407925Z",
+            "updated_at": "2023-10-27T07:15:58.067570Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0411\u043e\u0441\u0442\u0430\u043d\u0434\u044b\u043a\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 4
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 105",
+            "description": "P22a, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.099274,
+            "longitude": 76.906773,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4636,
+            "created_at": "2022-12-29T06:19:56.530516Z",
+            "updated_at": "2023-10-27T07:16:04.050418Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0411\u043e\u0441\u0442\u0430\u043d\u0434\u044b\u043a\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 4
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 106",
+            "description": "\u0410\u043b\u043c\u0430 \u0410\u0440\u0430\u0441\u0430\u043d, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.11392,
+            "longitude": 76.913525,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4637,
+            "created_at": "2022-12-29T06:19:57.644857Z",
+            "updated_at": "2023-10-27T07:16:10.512315Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0411\u043e\u0441\u0442\u0430\u043d\u0434\u044b\u043a\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 4
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 107",
+            "description": "\u0410\u043b\u043c\u0430 \u0410\u0440\u0430\u0441\u0430\u043d, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.12879,
+            "longitude": 76.906317,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4638,
+            "created_at": "2022-12-29T06:19:58.773984Z",
+            "updated_at": "2023-10-27T07:16:16.053570Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0411\u043e\u0441\u0442\u0430\u043d\u0434\u044b\u043a\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 4
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 11",
+            "description": "\u0414\u0430\u0440\u0430\u0431\u043e\u0437 \u044b\u049b\u0448\u0430\u043c \u0430\u0443\u0434\u0430\u043d\u044b, 23, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.266654,
+            "longitude": 76.821301,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4541,
+            "created_at": "2022-12-29T06:18:12.136669Z",
+            "updated_at": "2023-10-27T07:16:59.690204Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 113",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0411\u043e\u043a\u0435\u0439\u0445\u0430\u043d\u043e\u0432\u0430, 77, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.287819,
+            "longitude": 76.90241,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4645,
+            "created_at": "2022-12-29T06:20:05.664461Z",
+            "updated_at": "2023-10-27T07:17:19.509658Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 114",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0411\u043e\u043a\u0435\u0439\u0445\u0430\u043d\u043e\u0432\u0430, 153, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.292473,
+            "longitude": 76.900544,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4646,
+            "created_at": "2022-12-29T06:20:06.797742Z",
+            "updated_at": "2023-10-27T07:17:24.862078Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 118",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b-\u0423\u0441\u0442\u044c-\u041a\u0430\u043c\u0435\u043d\u043e\u0433\u043e\u0440\u0441\u043a, 84, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.363354,
+            "longitude": 76.944315,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4650,
+            "created_at": "2022-12-29T06:20:11.299683Z",
+            "updated_at": "2023-10-27T07:17:37.444287Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 12",
+            "description": "13-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 10, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.280961,
+            "longitude": 76.809721,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4542,
+            "created_at": "2022-12-29T06:18:13.254308Z",
+            "updated_at": "2023-10-27T07:17:58.602131Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 121",
+            "description": null,
+            "latitude": 43.365511,
+            "longitude": 76.944049,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4653,
+            "created_at": "2022-12-29T06:20:14.689040Z",
+            "updated_at": "2023-10-27T07:18:09.820163Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 122",
+            "description": null,
+            "latitude": 43.370742,
+            "longitude": 76.948617,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4654,
+            "created_at": "2022-12-29T06:20:15.798595Z",
+            "updated_at": "2023-10-27T07:18:16.560253Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 123",
+            "description": null,
+            "latitude": 43.377289,
+            "longitude": 76.950696,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4655,
+            "created_at": "2022-12-29T06:20:16.927717Z",
+            "updated_at": "2023-10-27T07:18:21.465731Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 124",
+            "description": null,
+            "latitude": 43.375082,
+            "longitude": 76.947349,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4656,
+            "created_at": "2022-12-29T06:20:18.059357Z",
+            "updated_at": "2023-10-27T07:18:26.880012Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 125",
+            "description": null,
+            "latitude": 43.373172,
+            "longitude": 76.944862,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4657,
+            "created_at": "2022-12-29T06:20:19.186828Z",
+            "updated_at": "2023-10-27T07:18:32.003335Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 130",
+            "description": null,
+            "latitude": 43.18745074816705,
+            "longitude": 76.961242182376,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4662,
+            "created_at": "2022-12-29T06:20:24.818099Z",
+            "updated_at": "2023-10-27T07:18:56.919392Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 132",
+            "description": null,
+            "latitude": 43.173657,
+            "longitude": 76.971355,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4664,
+            "created_at": "2022-12-29T06:20:27.063341Z",
+            "updated_at": "2023-10-27T07:19:06.604792Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 134",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u041a\u0435\u0440\u0431\u0443\u043b\u0430\u043a\u0441\u043a\u0430\u044f, 5\u0432/1, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.187447731794116,
+            "longitude": 76.96123388469485,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4666,
+            "created_at": "2022-12-29T06:20:29.323390Z",
+            "updated_at": "2023-10-27T07:23:53.999538Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 137",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0422\u043e\u043b\u0435 \u0411\u0438, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.239885,
+            "longitude": 76.833634,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4669,
+            "created_at": "2022-12-29T06:20:32.689805Z",
+            "updated_at": "2023-10-27T07:24:13.335372Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 138",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0410\u0448\u0438\u043c\u043e\u0432\u0430, 1/9, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.227397,
+            "longitude": 76.801174,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4670,
+            "created_at": "2022-12-29T06:20:33.822916Z",
+            "updated_at": "2023-10-27T07:24:22.305853Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 139",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.206678,
+            "longitude": 76.80381,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4671,
+            "created_at": "2022-12-29T06:20:34.949531Z",
+            "updated_at": "2023-10-27T07:24:28.342623Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 141",
+            "description": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0420\u044b\u0441\u043a\u0443\u043b\u043e\u0432\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.255687,
+            "longitude": 76.830035,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4673,
+            "created_at": "2022-12-29T06:20:37.195343Z",
+            "updated_at": "2023-10-27T07:25:31.580071Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 142",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0410\u043a-\u041a\u0430\u0439\u043d\u0430\u0440, 53, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.311827,
+            "longitude": 76.841398,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4674,
+            "created_at": "2022-12-29T06:20:38.313300Z",
+            "updated_at": "2023-10-27T07:25:36.586833Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 145",
+            "description": "\u041a\u043e\u043a\u0436\u0438\u0435\u043a \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 4, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.356909,
+            "longitude": 76.917638,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4677,
+            "created_at": "2022-12-29T06:20:41.676549Z",
+            "updated_at": "2023-10-27T07:25:53.817429Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 147",
+            "description": "\u0423\u0442\u0435\u043c\u0438\u0441\u043e\u0432\u0430 \u0443\u043b\u0438\u0446\u0430, 17, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.29512806575497,
+            "longitude": 76.86269331191662,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4679,
+            "created_at": "2022-12-29T06:20:43.912550Z",
+            "updated_at": "2023-10-27T07:26:06.019344Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 148",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0416\u0443\u043c\u0430\u0431\u0430\u0435\u0432\u0430, 71\u0411/2, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.320772,
+            "longitude": 76.915376,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4680,
+            "created_at": "2022-12-29T06:20:45.034370Z",
+            "updated_at": "2023-10-27T07:26:10.800500Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 149",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0421\u0435\u0440\u0438\u043a\u043e\u0432\u0430, 15, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.30211,
+            "longitude": 76.925467,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4681,
+            "created_at": "2022-12-29T06:20:46.162589Z",
+            "updated_at": "2023-10-27T07:26:21.575829Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 15",
+            "description": null,
+            "latitude": 43.331928,
+            "longitude": 76.838852,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4545,
+            "created_at": "2022-12-29T06:18:16.640401Z",
+            "updated_at": "2023-10-27T07:26:26.914545Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 150",
+            "description": "\u0411\u0435\u0439\u0431\u0438\u0442\u0448\u0438\u043b\u0438\u043a (\u0410\u043b\u044c\u043c\u0435\u0440\u0435\u043a), \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.375286,
+            "longitude": 77.004783,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4682,
+            "created_at": "2022-12-29T06:20:47.291969Z",
+            "updated_at": "2023-10-27T07:26:41.378375Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 151",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.363677,
+            "longitude": 76.992848,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4683,
+            "created_at": "2022-12-29T06:20:48.425379Z",
+            "updated_at": "2023-10-27T07:26:55.384361Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 153",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0425\u0430\u043d \u0422\u0435\u043d\u0433\u0440\u0438, 45, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.282243,
+            "longitude": 76.998784,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4686,
+            "created_at": "2022-12-29T06:20:50.789730Z",
+            "updated_at": "2023-10-27T07:27:09.388337Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 154",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u041a\u0438\u043b\u044b\u0431\u0430\u0439 \u041c\u0435\u0434\u0435\u0443\u0431\u0435\u043a\u043e\u0432\u0430, 106, \u041a\u0430\u0440\u0430\u0441\u0430\u0439\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.210801,
+            "longitude": 76.774034,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4687,
+            "created_at": "2022-12-29T06:20:51.914494Z",
+            "updated_at": "2023-10-27T07:27:15.610634Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 155",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0423\u0437\u0430\u043a\u0431\u0430\u0439 \u041a\u0430\u0440\u0430\u043c\u0430\u043d\u043e\u0432, 58/\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.209052,
+            "longitude": 76.778199,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4688,
+            "created_at": "2022-12-29T06:20:53.035657Z",
+            "updated_at": "2023-10-27T07:27:20.585815Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 157",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.162991,
+            "longitude": 76.811291,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4690,
+            "created_at": "2022-12-29T06:20:55.275363Z",
+            "updated_at": "2023-10-27T07:27:27.210064Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 158",
+            "description": "\u0410\u0439\u043c\u0430\u043d\u043e\u0432\u0430 \u0443\u043b., \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.173075,
+            "longitude": 76.803285,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4691,
+            "created_at": "2022-12-29T06:20:56.397437Z",
+            "updated_at": "2023-10-27T07:27:35.793661Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 16",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.321199,
+            "longitude": 76.839644,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4546,
+            "created_at": "2022-12-29T06:18:17.762305Z",
+            "updated_at": "2023-10-27T07:27:48.246828Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 161, \u0443\u043b. \u0423\u0437\u0430\u043a\u0431\u0430\u0439 \u041a\u0430\u0440\u0430\u043c\u0430\u043d\u043e\u0432\u0430 1, \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0423\u0437\u0430\u043a\u0431\u0430\u0439 \u041a\u0430\u0440\u0430\u043c\u0430\u043d\u043e\u0432, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.21227391433494,
+            "longitude": 76.77508042771215,
+            "cohort_tracking": false,
+            "group_id": 44,
+            "id": 8614,
+            "created_at": "2024-01-12T11:47:17.018503Z",
+            "updated_at": "2024-01-12T11:50:38.821307Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 162",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0421\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f, 61, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.209299,
+            "longitude": 76.783723,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4695,
+            "created_at": "2022-12-29T06:21:00.873753Z",
+            "updated_at": "2023-10-27T07:28:04.669917Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 166",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u043a\u043e\u0433\u043e, 257/2, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.319062,
+            "longitude": 76.979391,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4699,
+            "created_at": "2022-12-29T06:21:05.376311Z",
+            "updated_at": "2023-10-27T07:28:24.679854Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 167",
+            "description": "\u0416\u0430\u044f\u0443 \u041c\u0443\u0441\u0430 \u0443\u043b\u0438\u0446\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.308034,
+            "longitude": 76.988599,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4700,
+            "created_at": "2022-12-29T06:21:06.503753Z",
+            "updated_at": "2023-10-27T07:28:31.865831Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 169",
+            "description": "\u0418\u043b\u0438\u0439\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d",
+            "latitude": 43.404469,
+            "longitude": 76.991986,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4702,
+            "created_at": "2022-12-29T06:21:08.735373Z",
+            "updated_at": "2023-10-27T07:28:45.432479Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 17",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.287225,
+            "longitude": 76.99961,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4547,
+            "created_at": "2022-12-29T06:18:18.885453Z",
+            "updated_at": "2023-10-27T07:28:52.764012Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 170",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.329482,
+            "longitude": 76.99726,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4703,
+            "created_at": "2022-12-29T06:21:09.850733Z",
+            "updated_at": "2023-10-27T07:28:58.960449Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 174",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0411\u0430\u0439\u043c\u0430\u0433\u0430\u043c\u0431\u0435\u0442\u043e\u0432\u0430, 183, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.312826,
+            "longitude": 76.974097,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4707,
+            "created_at": "2022-12-29T06:21:14.363095Z",
+            "updated_at": "2023-10-27T07:29:26.167524Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 175",
+            "description": "\u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.324557,
+            "longitude": 76.982316,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4708,
+            "created_at": "2022-12-29T06:21:15.494985Z",
+            "updated_at": "2023-10-27T07:29:31.401496Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 176",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u043a\u043e\u0433\u043e, 2, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.313671,
+            "longitude": 76.98944,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4709,
+            "created_at": "2022-12-29T06:21:16.612533Z",
+            "updated_at": "2023-10-27T07:29:36.716331Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 177",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u043a\u043e\u0433\u043e, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.31293,
+            "longitude": 76.992936,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4710,
+            "created_at": "2022-12-29T06:21:17.733542Z",
+            "updated_at": "2023-10-27T07:29:51.513196Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 178",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u043a\u043e\u0433\u043e, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.309125,
+            "longitude": 77.00221,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4711,
+            "created_at": "2022-12-29T06:21:18.850226Z",
+            "updated_at": "2023-10-27T07:29:59.271231Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                },
+                {
+                    "name": "\u0422\u0443\u0440\u043a\u0441\u0438\u0431\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 7
+                }
+            ]
+        },
+        {
+            "name": "OST 18",
+            "description": "\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u0430\u044f \u043e\u0431\u044a\u0435\u0437\u0434\u043d\u0430\u044f \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u0430\u044f \u0434\u043e\u0440\u043e\u0433\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.279753,
+            "longitude": 76.985031,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4548,
+            "created_at": "2022-12-29T06:18:20.003028Z",
+            "updated_at": "2023-10-27T07:32:53.272107Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 2",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0411\u0435\u0440\u0442\u0430\u0439\u043a\u044b\u0437\u044b, 38, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.296156,
+            "longitude": 76.880046,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4532,
+            "created_at": "2022-12-29T06:18:02.006233Z",
+            "updated_at": "2023-10-27T07:33:07.247329Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 20",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0422\u043e\u043b\u0435 \u0411\u0438, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.254065,
+            "longitude": 76.938507,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4550,
+            "created_at": "2022-12-29T06:18:22.262684Z",
+            "updated_at": "2023-10-27T07:33:13.376873Z",
+            "plan_count": 0,
+            "camera_count": 3,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u043c\u0430\u043b\u0438\u043d\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 6
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 21",
+            "description": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0420\u0430\u0439\u044b\u043c\u0431\u0435\u043a\u0430, 590/2 \u043a2, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.231399,
+            "longitude": 76.780055,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4553,
+            "created_at": "2022-12-29T06:18:23.637251Z",
+            "updated_at": "2023-10-27T07:33:28.491036Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 23",
+            "description": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0420\u0430\u0439\u044b\u043c\u0431\u0435\u043a\u0430, 208, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.262173,
+            "longitude": 76.896545,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4555,
+            "created_at": "2022-12-29T06:18:25.906115Z",
+            "updated_at": "2023-10-27T07:34:07.360516Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u043c\u0430\u043b\u0438\u043d\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 6
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 25",
+            "description": "\u041a\u043e\u043a\u0436\u0438\u0435\u043a \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.356856,
+            "longitude": 76.921341,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4556,
+            "created_at": "2022-12-29T06:18:27.034104Z",
+            "updated_at": "2023-10-27T07:34:13.134417Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 27",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0411\u043e\u043a\u0435\u0439\u0445\u0430\u043d\u043e\u0432\u0430, 514\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.301227,
+            "longitude": 76.897331,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4558,
+            "created_at": "2022-12-29T06:18:29.276636Z",
+            "updated_at": "2023-10-27T07:34:29.775712Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 28",
+            "description": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0421\u0443\u044e\u043d\u0431\u0430\u044f, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.274373,
+            "longitude": 76.948803,
+            "cohort_tracking": false,
+            "group_id": 6,
+            "id": 4559,
+            "created_at": "2022-12-29T06:18:30.398625Z",
+            "updated_at": "2023-10-27T07:34:36.567444Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 31",
+            "description": "\u0421\u0435\u0432\u0435\u0440\u043d\u043e\u0435 \u043a\u043e\u043b\u044c\u0446\u043e, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.320735,
+            "longitude": 76.904692,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4561,
+            "created_at": "2022-12-29T06:18:32.655998Z",
+            "updated_at": "2023-10-27T07:34:52.679067Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 34",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0425\u0430\u043d \u0422\u0435\u043d\u0433\u0440\u0438, 75, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.278455,
+            "longitude": 76.999427,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4564,
+            "created_at": "2022-12-29T06:18:36.018771Z",
+            "updated_at": "2023-10-27T07:34:59.341308Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 35",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0425\u0430\u043b\u0438\u0443\u043b\u043b\u0438\u043d\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.284734,
+            "longitude": 76.98595,
+            "cohort_tracking": false,
+            "group_id": 3,
+            "id": 4565,
+            "created_at": "2022-12-29T06:18:37.135415Z",
+            "updated_at": "2023-10-27T07:35:06.005610Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041c\u0435\u0434\u0435\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 2
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 38",
+            "description": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0420\u0430\u0439\u044b\u043c\u0431\u0435\u043a\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.270151,
+            "longitude": 76.938953,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4568,
+            "created_at": "2022-12-29T06:18:40.514196Z",
+            "updated_at": "2023-10-27T07:35:24.201223Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0416\u0435\u0442\u044b\u0441\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 5
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 4",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0411\u0435\u0441\u0448\u0430\u0442\u044b\u0440, 32\u0410, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.304076,
+            "longitude": 76.88438,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4534,
+            "created_at": "2022-12-29T06:18:04.261377Z",
+            "updated_at": "2023-10-27T07:35:39.375995Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 44",
+            "description": "\u0416\u0430\u0439\u043b\u044b \u0443\u043b\u0438\u0446\u0430, 13\u0433, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.263635,
+            "longitude": 76.861135,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4574,
+            "created_at": "2022-12-29T06:18:47.275643Z",
+            "updated_at": "2023-10-27T07:36:07.392598Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 45",
+            "description": "\u0443\u043b\u0438\u0446\u0430 \u0429\u0435\u043f\u0435\u0442\u043a\u043e\u0432\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.220409,
+            "longitude": 76.876422,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4575,
+            "created_at": "2022-12-29T06:18:48.408181Z",
+            "updated_at": "2023-10-27T07:36:12.696763Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 46",
+            "description": "45, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.226988,
+            "longitude": 76.867842,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4576,
+            "created_at": "2022-12-29T06:18:49.534165Z",
+            "updated_at": "2023-10-27T07:36:19.828917Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 49",
+            "description": "\u0421\u0430\u043c\u0435\u043d \u0431\u0430\u0442\u044b\u0440\u0430 \u0443\u043b\u0438\u0446\u0430, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.251193,
+            "longitude": 76.797492,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4579,
+            "created_at": "2022-12-29T06:18:52.919225Z",
+            "updated_at": "2023-10-27T07:36:37.619280Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 50",
+            "description": "\u0443\u043b\u0438\u0446\u0430  \u041e\u043d\u0433\u0430\u0440\u0441\u044b\u043d\u043e\u0432\u043e\u0439, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.246195,
+            "longitude": 76.80398,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4580,
+            "created_at": "2022-12-29T06:18:54.040407Z",
+            "updated_at": "2023-10-27T07:36:53.717085Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u043b\u0430\u0442\u0430\u0443\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 8
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 51",
+            "description": "\u0423\u043b\u0443\u0433\u0431\u0435\u043a\u0430 \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442, \u0410\u043b\u043c\u0430\u0442\u044b",
+            "latitude": 43.21891,
+            "longitude": 76.813202,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4581,
+            "created_at": "2022-12-29T06:18:55.170006Z",
+            "updated_at": "2023-10-27T07:37:00.677636Z",
+            "plan_count": 0,
+            "camera_count": 0,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u041d\u0430\u0443\u0440\u044b\u0437\u0431\u0430\u0439\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 9
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        },
+        {
+            "name": "OST 53",
+            "description": null,
+            "latitude": 43.232991,
+            "longitude": 76.825127,
+            "cohort_tracking": false,
+            "group_id": 1,
+            "id": 4583,
+            "created_at": "2022-12-29T06:18:57.411388Z",
+            "updated_at": "2023-10-27T07:37:22.233192Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u044b\u0435",
+                "parent_id": 44,
+                "id": 54,
+                "path": "44.54"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "\u0410\u0443\u044d\u0437\u043e\u0432\u0441\u043a\u0438\u0439 \u0440-\u043d",
+                    "id": 3
+                },
+                {
+                    "name": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0448\u043a\u043e\u043b\u044c\u043d\u044b\u0435",
+                    "id": 116
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+# https://esvm.kz/docs/
+# login: cra_api@esvm.kz
+# password: C38lcd6bu90bAvNN-EEu9-LjFCJdTnI9
+# https://teye.kz/login
+клиенту нужно уметь работать с пагинацией. получать курсор и вставлять в след запрос для след страницы
