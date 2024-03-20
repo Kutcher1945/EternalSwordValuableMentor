@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile.cameras
     command: python -u cameras_insert.py
     environment:
-      - TZ=Asia/Almaty
+      - TZ=Asia/Atyrau
     restart: always
 
   place:
@@ -17,7 +17,7 @@ services:
       dockerfile: Dockerfile.place
     command: python -u place_insert.py
     environment:
-      - TZ=Asia/Almaty
+      - TZ=Asia/Atyrau
     restart: always
 
   events_ao:
@@ -27,7 +27,7 @@ services:
       dockerfile: Dockerfile.events_ao
     command: python -u events_insert_ao.py
     environment:
-      - TZ=Asia/Almaty
+      - TZ=Asia/Atyrau
     restart: always
 
   events_fr:
