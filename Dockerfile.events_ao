@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY events_insert_ao.py .
 
-CMD [ "python", "-u", "events_insert_ao.py" ]
+CMD [ "python", "events_insert_ao.py" ]

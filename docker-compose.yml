@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.cameras
-    command: python -u cameras_insert.py
+    command: python cameras_insert.py
     environment:
       - TZ=Asia/Atyrau
     restart: always
@@ -15,7 +15,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.place
-    command: python -u place_insert.py
+    command: python place_insert.py
     environment:
       - TZ=Asia/Atyrau
     restart: always
@@ -25,7 +25,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.events_ao
-    command: python -u events_insert_ao.py
+    command: python events_insert_ao.py
     environment:
       - TZ=Asia/Atyrau
     restart: always
@@ -35,7 +35,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.events_fr
-    command: python -u events_insert_fr.py
+    command: python events_insert_fr.py
     environment:
       - TZ=Asia/Atyrau
     restart: always
@@ -45,7 +45,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.events_lpr
-    command: python -u events_insert_lpr.py
+    command: python events_insert_lpr.py
     environment:
       - TZ=Asia/Atyrau
     restart: always
@@ -55,7 +55,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.events_sa
-    command: python -u events_insert_sa.py
+    command: python events_insert_sa.py
     environment:
       - TZ=Asia/Atyrau
     restart: always
@@ -65,7 +65,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.events_tp
-    command: python -u events_insert_tp.py
+    command: python events_insert_tp.py
     environment:
       - TZ=Asia/Atyrau
     restart: always
