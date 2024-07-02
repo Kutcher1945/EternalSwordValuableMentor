@@ -1,6 +1,8 @@
 import requests
 import psycopg2
 from psycopg2.extras import Json
+import time
+from tqdm import tqdm
 
 # Database connection parameters
 DB_HOST = '172.30.227.205'
@@ -177,13 +179,26 @@ def fetch_all_camera_ids():
         cursor.close()
         conn.close()
 
+# Function to refresh token
+def refresh_token(url, login, password):
+    while True:
+        token = get_token(url, login, password)
+        if token:
+            print("New token obtained:", token)
+            yield token
+            time.sleep(30 * 60)  # Sleep for 30 minutes before refreshing the token again
+        else:
+            print("Token refresh failed. Retrying in 5 seconds...")
+            time.sleep(5)
+
 # URL and credentials to obtain initial token
 token_url = "https://esvm.kz/api/v1/token"
 login = "cra_api@esvm.kz"
 password = "qyKoZ7wosJf2W7AhOFINz5clCyOdKtD0"
 
 # Obtain token
-token = get_token(token_url, login, password)
+token_generator = refresh_token(token_url, login, password)
+token = next(token_generator)
 
 # Check if token obtained successfully
 if token:
@@ -191,7 +206,7 @@ if token:
     camera_ids = fetch_all_camera_ids()
 
     if camera_ids:
-        for camera_id in camera_ids:
+        for camera_id in tqdm(camera_ids, desc="Processing cameras"):
             # Construct the stream URL for each camera_id
             stream_url = f"https://esvm.kz/api/v1/streams/{camera_id}"
             stream_data = get_stream_data(stream_url, token)

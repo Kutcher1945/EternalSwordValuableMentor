@@ -69,3 +69,13 @@ services:
     environment:
       - TZ=Asia/Atyrau
     restart: always
+  
+  cameras_stream:
+    container_name: cameras_stream
+    build:
+      context: .
+      dockerfile: Dockerfile.streams
+    command: python streams_insert.py
+    environment:
+      - TZ=Asia/Atyrau
+    restart: always
