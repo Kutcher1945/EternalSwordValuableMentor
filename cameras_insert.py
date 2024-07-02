@@ -25,7 +25,7 @@ def create_table_if_not_exists():
 
         create_table_query = """
         CREATE TABLE IF NOT EXISTS esvm_cameras (
-            camera_id TEXT UNIQUE,  -- Added camera_id as unique
+            camera_id TEXT PRIMARY KEY,  -- Set camera_id as the primary key
             name TEXT,
             source_url TEXT,
             video_analytics JSONB,
@@ -39,19 +39,22 @@ def create_table_if_not_exists():
             scheduler_group TEXT,
             state TEXT,
             state_reason TEXT,
-            created_at TIMESTAMP,
-            updated_at TIMESTAMP,
+            created_at TIMESTAMP WITH TIME ZONE,
+            updated_at TIMESTAMP WITH TIME ZONE,
             snapshot_url TEXT,
             place_name TEXT,
             place_description TEXT,
-            place_latitude NUMERIC,
-            place_longitude NUMERIC,
+            place_latitude NUMERIC(9,6),
+            place_longitude NUMERIC(9,6),
             capacitygroup_token TEXT,
             plan_id TEXT,
-            plan_x NUMERIC,
-            plan_y NUMERIC,
+            plan_x NUMERIC(9,6),
+            plan_y NUMERIC(9,6),
             ptz JSONB,
-            scheduler_tags JSONB
+            scheduler_tags JSONB,
+            is_deleted BOOLEAN DEFAULT FALSE,
+            address_id BIGINT,
+            geom GEOMETRY(Geometry,4326)
         )
         """
 
@@ -65,7 +68,7 @@ def create_table_if_not_exists():
         cursor.close()
         conn.close()
 
-def insert_data_into_db(data):
+def insert_data_into_db(data, received_camera_ids):
     try:
         conn = psycopg2.connect(
             host=DB_HOST,
@@ -110,7 +113,8 @@ def insert_data_into_db(data):
                 plan_x = %s,
                 plan_y = %s,
                 ptz = %s,
-                scheduler_tags = %s
+                scheduler_tags = %s,
+                is_deleted = FALSE  -- Mark as not deleted
             WHERE camera_id = %s
             """
             cursor.execute(update_query, (
@@ -172,9 +176,10 @@ def insert_data_into_db(data):
                 plan_x,
                 plan_y,
                 ptz,
-                scheduler_tags
+                scheduler_tags,
+                is_deleted
             )
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, FALSE)  -- Mark as not deleted
             """
             cursor.execute(insert_query, (
                 data.get("id"),  # Using ID as camera_id
@@ -207,6 +212,7 @@ def insert_data_into_db(data):
             ))
 
         conn.commit()
+        received_camera_ids.add(data["id"])
 
         # Execute the update scripts for geometry and address_id if necessary
         execute_update_scripts(conn, cursor)
@@ -245,6 +251,31 @@ def execute_update_scripts(conn, cursor):
 
     conn.commit()
 
+def mark_missing_cameras_as_deleted(received_camera_ids):
+    try:
+        conn = psycopg2.connect(
+            host=DB_HOST,
+            port=DB_PORT,
+            dbname=DB_NAME,
+            user=DB_USER,
+            password=DB_PASSWORD
+        )
+        cursor = conn.cursor()
+
+        # Update the is_deleted flag for cameras not in the received list
+        update_deleted_query = """
+        UPDATE esvm_cameras
+        SET is_deleted = TRUE
+        WHERE camera_id NOT IN %s
+        """
+        cursor.execute(update_deleted_query, (tuple(received_camera_ids),))
+        conn.commit()
+    except Exception as e:
+        print("Failed to update is_deleted flag:", str(e))
+        conn.rollback()
+    finally:
+        cursor.close()
+        conn.close()
 
 @retry(wait_exponential_multiplier=1000, wait_exponential_max=10000, stop_max_attempt_number=5)
 def get_cameras_data_with_retry(url, token, cursor=None):
@@ -302,6 +333,7 @@ if token:
         try:
             # Start fetching cameras data
             cursor = None
+            received_camera_ids = set()
             while True:
                 cameras_data = get_cameras_data_with_retry(cameras_url, token, cursor)
                 if cameras_data:
@@ -310,7 +342,7 @@ if token:
                     # Insert or update each camera data into the database
                     with tqdm(total=total_cameras) as pbar:
                         for camera in cameras_data["cameras"]:
-                            insert_data_into_db(camera)
+                            insert_data_into_db(camera, received_camera_ids)
                             pbar.update(1)
                     if "pagination" in cameras_data and "cursor" in cameras_data["pagination"]:
                         cursor = cameras_data["pagination"]["cursor"]
@@ -318,6 +350,7 @@ if token:
                         break
                 else:
                     break
+            mark_missing_cameras_as_deleted(received_camera_ids)
         except requests.exceptions.HTTPError as e:
             if e.response.status_code == 401:
                 print("Received 401 Unauthorized error. Attempting to obtain a new token.")
