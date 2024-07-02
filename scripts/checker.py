@@ -58,7 +58,7 @@ if token:
     ts_to = end_time.strftime("%Y-%m-%dT%H:%M:%SZ")
     
     # Get events data
-    events_url = "https://esvm.kz/api/v1/events"
+    events_url = "https://esvm.kz/api/v1/streams/780d5c6d-4dd8-47a4-88fa-5a0f6a4da49a"
     event_type = "ao"  # Specify the event type
     events_data = get_events_data(events_url, token, ts_from, ts_to, event_type)
 
@@ -69,9 +69,9 @@ if token:
         print(json.dumps(events_data, indent=4))
         
         # Save data to JSON file with UTF-8 encoding
-        with open("events_data.json", "w", encoding="utf-8") as file:
+        with open("plates_data.json", "w", encoding="utf-8") as file:
             json.dump(events_data, file, indent=4, ensure_ascii=False)
-            print("Events data saved to events_data.json")
+            print("plates data saved to plates_data.json")
     else:
         print("Unable to fetch events data.")
 else:

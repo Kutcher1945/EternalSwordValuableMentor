@@ -87,7 +87,7 @@ login = "cra_api@esvm.kz"
 password = "qyKoZ7wosJf2W7AhOFINz5clCyOdKtD0"
 
 # URL to get cameras data
-cameras_url = "https://esvm.kz/api/v1/cameras"
+cameras_url = "https://esvm.kz/api/v1/stats/cameras/"
 
 # Generator to refresh token every minute
 token_generator = refresh_token(token_url, login, password)

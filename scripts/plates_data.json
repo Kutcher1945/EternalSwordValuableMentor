@@ -1,0 +1,17 @@
+{
+    "streamserver_id": "c1c4fad2-44f5-4cf6-9ef7-7bc6a8b8553c",
+    "streamserver_host": "ss6",
+    "status": "active",
+    "ts": 1719904873223,
+    "info": {
+        "audio_codec": "unknown",
+        "audio_sample_rate": 0,
+        "total_bit_rate": 1779159,
+        "video_fps": 25.0,
+        "frame_width": 1920,
+        "frame_height": 1080,
+        "video_codec": "h264",
+        "transport_type": "tcp"
+    },
+    "live_url": "wss://8960df8b7ac8868d.esvm.kz/live/ss6/780d5c6d-4dd8-47a4-88fa-5a0f6a4da49a?ticket=eyJrZXkiOiJsaXZlL3NzNi83ODBkNWM2ZC00ZGQ4LTQ3YTQtODhmYS01YTBmNmE0ZGE0OWEiLCJ0cyI6MTcxOTkwNDg4NSwidHRsIjo5MDAuMH0.KY_T2gO-iv2Ertn_sIut9VoLiHQAfoeRxpLVW6FveG0"
+}
