@@ -58,7 +58,7 @@ if token:
     ts_to = end_time.strftime("%Y-%m-%dT%H:%M:%SZ")
     
     # Get events data
-    events_url = "https://esvm.kz/api/v1/streams/780d5c6d-4dd8-47a4-88fa-5a0f6a4da49a"
+    events_url = "https://esvm.kz/api/v1/stats/cameras"
     event_type = "ao"  # Specify the event type
     events_data = get_events_data(events_url, token, ts_from, ts_to, event_type)
 
