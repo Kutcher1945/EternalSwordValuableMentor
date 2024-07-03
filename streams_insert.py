@@ -94,89 +94,60 @@ def upsert_stream_data_into_db(stream_data, camera_id):
         transport_type = info.get('transport_type', 'unknown')
 
         # Upsert the stream data into the esvm_streams table
-        if info:  # if info is not empty
-            upsert_query = """
-            INSERT INTO esvm_streams (
-                stream_id,
-                camera_id,
-                streamserver_id,
-                streamserver_host,
-                status,
-                ts,
-                audio_codec,
-                audio_sample_rate,
-                total_bit_rate,
-                video_fps,
-                frame_width,
-                frame_height,
-                video_codec,
-                transport_type,
-                live_url,
-                info
-            )
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            ON CONFLICT (stream_id) DO UPDATE SET
-                streamserver_id = EXCLUDED.streamserver_id,
-                streamserver_host = EXCLUDED.streamserver_host,
-                status = EXCLUDED.status,
-                ts = EXCLUDED.ts,
-                audio_codec = EXCLUDED.audio_codec,
-                audio_sample_rate = EXCLUDED.audio_sample_rate,
-                total_bit_rate = EXCLUDED.total_bit_rate,
-                video_fps = EXCLUDED.video_fps,
-                frame_width = EXCLUDED.frame_width,
-                frame_height = EXCLUDED.frame_height,
-                video_codec = EXCLUDED.video_codec,
-                transport_type = EXCLUDED.transport_type,
-                live_url = EXCLUDED.live_url,
-                info = EXCLUDED.info
-            """
-            cursor.execute(upsert_query, (
-                stream_data.get('streamserver_id', 'unknown'),
-                camera_id,
-                stream_data.get('streamserver_id', 'unknown'),
-                stream_data.get('streamserver_host', 'unknown'),
-                stream_data.get('status', 'unknown'),
-                stream_data.get('ts', 0),
-                audio_codec,
-                audio_sample_rate,
-                total_bit_rate,
-                video_fps,
-                frame_width,
-                frame_height,
-                video_codec,
-                transport_type,
-                stream_data.get('live_url', 'unknown'),
-                Json(info)
-            ))
-        else:  # if info is empty
-            upsert_query = """
-            INSERT INTO esvm_streams (
-                stream_id,
-                camera_id,
-                streamserver_id,
-                streamserver_host,
-                status,
-                ts,
-                live_url
-            )
-            VALUES (%s, %s, %s, %s, %s, %s, %s)
-            ON CONFLICT (stream_id) DO UPDATE SET
-                streamserver_id = EXCLUDED.streamserver_id,
-                streamserver_host = EXCLUDED.streamserver_host,
-                status = EXCLUDED.status,
-                ts = EXCLUDED.ts,
-                live_url = EXCLUDED.live_url
-            """
-            cursor.execute(upsert_query, (
-                stream_data.get('streamserver_id', 'unknown'),
-                camera_id,
-                stream_data.get('streamserver_id', 'unknown'),
-                stream_data.get('streamserver_host', 'unknown'),
-                stream_data.get('status', 'unknown'),
-                stream_data.get('ts', 0),
-                stream_data.get('live_url', 'unknown')
-            ))
+        upsert_query = """
+        INSERT INTO esvm_streams (
+            stream_id,
+            camera_id,
+            streamserver_id,
+            streamserver_host,
+            status,
+            ts,
+            audio_codec,
+            audio_sample_rate,
+            total_bit_rate,
+            video_fps,
+            frame_width,
+            frame_height,
+            video_codec,
+            transport_type,
+            live_url,
+            info
+        )
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        ON CONFLICT (stream_id) DO UPDATE SET
+            streamserver_id = EXCLUDED.streamserver_id,
+            streamserver_host = EXCLUDED.streamserver_host,
+            status = EXCLUDED.status,
+            ts = EXCLUDED.ts,
+            audio_codec = EXCLUDED.audio_codec,
+            audio_sample_rate = EXCLUDED.audio_sample_rate,
+            total_bit_rate = EXCLUDED.total_bit_rate,
+            video_fps = EXCLUDED.video_fps,
+            frame_width = EXCLUDED.frame_width,
+            frame_height = EXCLUDED.frame_height,
+            video_codec = EXCLUDED.video_codec,
+            transport_type = EXCLUDED.transport_type,
+            live_url = EXCLUDED.live_url,
+            info = EXCLUDED.info
+        """
+        cursor.execute(upsert_query, (
+            stream_data.get('streamserver_id', 'unknown'),
+            camera_id,
+            stream_data.get('streamserver_id', 'unknown'),
+            stream_data.get('streamserver_host', 'unknown'),
+            stream_data.get('status', 'unknown'),
+            stream_data.get('ts', 0),
+            audio_codec,
+            audio_sample_rate,
+            total_bit_rate,
+            video_fps,
+            frame_width,
+            frame_height,
+            video_codec,
+            transport_type,
+            stream_data.get('live_url', 'unknown'),
+            Json(info)
+        ))
 
         conn.commit()
         print(f"Stream data upserted successfully for camera_id {camera_id}.")
