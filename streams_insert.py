@@ -3,13 +3,14 @@ import psycopg2
 from psycopg2.extras import Json
 import time
 from tqdm import tqdm
+import os
 
 # Database connection parameters
-DB_HOST = '172.30.227.205'
-DB_PORT = '5439'
-DB_NAME = 'sitcenter_postgis_datalake'
-DB_USER = 'la_noche_estrellada'
-DB_PASSWORD = 'Cfq,thNb13@'
+DB_HOST = os.getenv.env('DB_HOST')
+DB_PORT = os.getenv.env('DB_PORT')
+DB_NAME = os.getenv.env('DB_NAME')
+DB_USER = os.getenv.env('DB_USER')
+DB_PASSWORD = os.getenv.env('DB_PASSWORD')
 
 # Function to obtain token
 def get_token(url, login, password):
@@ -196,9 +197,9 @@ def refresh_token(url, login, password):
             time.sleep(5)
 
 # URL and credentials to obtain initial token
-token_url = "https://esvm.kz/api/v1/token"
-login = "cra_api@esvm.kz"
-password = "qyKoZ7wosJf2W7AhOFINz5clCyOdKtD0"
+token_url = os.getenv.env('token_url')
+login = os.getenv.env('login')
+password = os.getenv.env('password')
 
 # Obtain token
 token_generator = refresh_token(token_url, login, password)

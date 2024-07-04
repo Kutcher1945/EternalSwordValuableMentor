@@ -171,8 +171,8 @@ def insert_camera_stats_into_history_db(stats):
         cursor = conn.cursor()
 
         insert_query = """
-        INSERT INTO esvm_camera_stats_history (total_count, active_count)
-        VALUES (%s, %s)
+        INSERT INTO esvm_camera_stats_history (total_count, active_count, recorded_at)
+        VALUES (%s, %s, CURRENT_TIMESTAMP)
         """
 
         cursor.execute(insert_query, (
@@ -247,6 +247,6 @@ if token:
         else:
             print("Failed to fetch camera stats.")
 
-        tm.sleep(60 * 5)  # Check every 5 minutes
+        tm.sleep(5)  # Check every second
 else:
     print("Token not obtained. Cannot retrieve camera stats.")
