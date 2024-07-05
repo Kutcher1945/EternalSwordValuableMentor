@@ -3,14 +3,26 @@ import psycopg2
 from psycopg2.extras import Json
 import time
 from tqdm import tqdm
-import os
+import logging
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Database connection parameters
-DB_HOST = os.getenv.env('DB_HOST')
-DB_PORT = os.getenv.env('DB_PORT')
-DB_NAME = os.getenv.env('DB_NAME')
-DB_USER = os.getenv.env('DB_USER')
-DB_PASSWORD = os.getenv.env('DB_PASSWORD')
+DB_HOST = '172.30.227.205'
+DB_PORT = '5439'
+DB_NAME = 'sitcenter_postgis_datalake'
+DB_USER = 'la_noche_estrellada'
+DB_PASSWORD = 'Cfq,thNb13@'
+
+# Logging configuration
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger()
+
+# URL and credentials to obtain initial token
+token_url = "https://esvm.kz/api/v1/token"
+refresh_token_url = "https://esvm.kz/api/v1/token/refresh"
+login = "cra_api@esvm.kz"
+password = "qyKoZ7wosJf2W7AhOFINz5clCyOdKtD0"
 
 # Function to obtain token
 def get_token(url, login, password):
@@ -22,23 +34,61 @@ def get_token(url, login, password):
     response = requests.post(url, data=payload)
     if response.status_code == 200:
         data = response.json()
-        return data.get("access_token")
+        return data.get("access_token"), data.get("refresh_token")
     else:
-        print("Failed to obtain token. Status code:", response.status_code)
-        return None
+        logger.error(f"Failed to obtain token. Status code: {response.status_code}, Response: {response.text}")
+        return None, None
 
-# Function to get stream data
-def get_stream_data(url, token):
-    headers = {"Authorization": f"Bearer {token}"}
-    response = requests.get(url, headers=headers)
+# Function to refresh token
+def refresh_token(url, refresh_token):
+    payload = {
+        "grant_type": "refresh_token",
+        "refresh_token": refresh_token
+    }
+    response = requests.post(url, data=payload)
     if response.status_code == 200:
-        return response.json()
-    elif response.status_code == 404:
-        return None  # Indicate that the stream was not found
+        data = response.json()
+        logger.info("Token refreshed successfully.")
+        return data.get("access_token"), data.get("refresh_token")
     else:
-        print("Failed to get stream data. Status code:", response.status_code)
-        print("Response content:", response.content)
-        return None
+        logger.error(f"Failed to refresh token. Status code: {response.status_code}, Response: {response.text}")
+        return None, None
+
+# Function to periodically refresh the token
+def refresh_token_periodically():
+    global access_token, refresh_token_value
+    while True:
+        time.sleep(1740)  # Sleep for 29 minutes (29 * 60 = 1740 seconds)
+        access_token, refresh_token_value = refresh_token(refresh_token_url, refresh_token_value)
+        if not access_token:
+            logger.error("Failed to refresh token. Re-authenticating...")
+            access_token, refresh_token_value = get_token(token_url, login, password)
+            if not access_token:
+                logger.error("Failed to re-authenticate. Exiting...")
+                raise RuntimeError("Failed to re-authenticate. Exiting...")
+        else:
+            logger.info("Token refreshed successfully.")
+
+# Function to get stream data with retry logic
+def get_stream_data(url, token, retries=5, backoff_factor=1):
+    headers = {"Authorization": f"Bearer {token}"}
+    for attempt in range(retries):
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                return response.json()
+            elif response.status_code == 401:
+                raise PermissionError("Token expired")
+            elif response.status_code == 404:
+                return None  # Indicate that the stream was not found
+            else:
+                logger.error(f"Failed to get stream data. Status code: {response.status_code}. Response content: {response.content}")
+                return None
+        except requests.exceptions.RequestException as e:
+            logger.warning(f"Request failed: {e}. Retrying in {backoff_factor * (attempt + 1)} seconds...")
+            time.sleep(backoff_factor * (attempt + 1))
+    logger.error(f"Failed to get stream data after {retries} attempts.")
+    return None
 
 # Function to mark camera as inactive
 def mark_camera_as_inactive(camera_id):
@@ -52,27 +102,24 @@ def mark_camera_as_inactive(camera_id):
         )
         cursor = conn.cursor()
         update_query = """
-        INSERT INTO esvm_streams (stream_id, camera_id, status)
-        VALUES (%s, %s, 'inactive')
-        ON CONFLICT (stream_id) DO UPDATE SET
-            status = 'inactive';
+        INSERT INTO esvm_streams (camera_id, status, created_at, updated_at)
+        VALUES (%s, 'inactive', NOW(), NOW())
+        ON CONFLICT (camera_id) DO UPDATE SET
+            status = 'inactive',
+            updated_at = NOW();
         """
-        cursor.execute(update_query, (camera_id, camera_id))
+        cursor.execute(update_query, (camera_id,))
         conn.commit()
-        print(f"Camera {camera_id} marked as inactive.")
+        logger.info(f"Camera {camera_id} marked as inactive.")
     except Exception as e:
-        print(f"Failed to mark camera {camera_id} as inactive:", str(e))
+        logger.error(f"Failed to mark camera {camera_id} as inactive: {str(e)}")
         conn.rollback()
     finally:
         cursor.close()
         conn.close()
 
-# Function to insert or update stream data in the database
-def upsert_stream_data_into_db(stream_data, camera_id):
-    if stream_data is None:
-        print(f"No stream data for camera_id {camera_id}")
-        return
-
+# Function to insert data into the historical table
+def insert_into_historical_table(stream_data, camera_id):
     try:
         conn = psycopg2.connect(
             host=DB_HOST,
@@ -83,16 +130,93 @@ def upsert_stream_data_into_db(stream_data, camera_id):
         )
         cursor = conn.cursor()
 
-        # Extract info fields with default values if None
+        # Ensure default values for fields that might be None
         info = stream_data.get('info') or {}
-        audio_codec = info.get('audio_codec', 'unknown')
-        audio_sample_rate = info.get('audio_sample_rate', 0)
-        total_bit_rate = info.get('total_bit_rate', 0)
-        video_fps = info.get('video_fps', 0.0)
-        frame_width = info.get('frame_width', 0)
-        frame_height = info.get('frame_height', 0)
-        video_codec = info.get('video_codec', 'unknown')
-        transport_type = info.get('transport_type', 'unknown')
+        audio_codec = info.get('audio_codec') or 'unknown'
+        audio_sample_rate = info.get('audio_sample_rate') or 0
+        total_bit_rate = info.get('total_bit_rate') or 0
+        video_fps = info.get('video_fps') or 0.0
+        frame_width = info.get('frame_width') or 0
+        frame_height = info.get('frame_height') or 0
+        video_codec = info.get('video_codec') or 'unknown'
+        transport_type = info.get('transport_type') or 'unknown'
+
+        insert_query = """
+        INSERT INTO esvm_streams_historical (
+            stream_id,
+            camera_id,
+            streamserver_id,
+            streamserver_host,
+            status,
+            ts,
+            audio_codec,
+            audio_sample_rate,
+            total_bit_rate,
+            video_fps,
+            frame_width,
+            frame_height,
+            video_codec,
+            transport_type,
+            live_url,
+            info,
+            created_at,
+            updated_at
+        )
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, NOW(), NOW());
+        """
+        cursor.execute(insert_query, (
+            stream_data.get('streamserver_id') or 'unknown',
+            camera_id,
+            stream_data.get('streamserver_id') or 'unknown',
+            stream_data.get('streamserver_host') or 'unknown',
+            stream_data.get('status') or 'unknown',
+            stream_data.get('ts') or 0,
+            audio_codec,
+            audio_sample_rate,
+            total_bit_rate,
+            video_fps,
+            frame_width,
+            frame_height,
+            video_codec,
+            transport_type,
+            stream_data.get('live_url') or 'unknown',
+            Json(info)
+        ))
+
+        conn.commit()
+        logger.info(f"Stream data inserted into historical table for camera_id {camera_id}.")
+    except Exception as e:
+        logger.error(f"Failed to insert stream data into the historical table for camera_id {camera_id}: {e}")
+        conn.rollback()
+    finally:
+        cursor.close()
+        conn.close()
+
+# Function to insert or update stream data in the database
+def upsert_stream_data_into_db(stream_data, camera_id):
+    try:
+        conn = psycopg2.connect(
+            host=DB_HOST,
+            port=DB_PORT,
+            dbname=DB_NAME,
+            user=DB_USER,
+            password=DB_PASSWORD
+        )
+        cursor = conn.cursor()
+
+        # Ensure default values for fields that might be None
+        info = stream_data.get('info') or {}
+        audio_codec = info.get('audio_codec') or 'unknown'
+        audio_sample_rate = info.get('audio_sample_rate') or 0
+        total_bit_rate = info.get('total_bit_rate') or 0
+        video_fps = info.get('video_fps') or 0.0
+        frame_width = info.get('frame_width') or 0
+        frame_height = info.get('frame_height') or 0
+        video_codec = info.get('video_codec') or 'unknown'
+        transport_type = info.get('transport_type') or 'unknown'
+
+        # Unique stream identifier
+        stream_id = f"{stream_data.get('streamserver_id')}_{camera_id}"
 
         # Upsert the stream data into the esvm_streams table
         upsert_query = """
@@ -112,10 +236,13 @@ def upsert_stream_data_into_db(stream_data, camera_id):
             video_codec,
             transport_type,
             live_url,
-            info
+            info,
+            created_at,
+            updated_at
         )
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-        ON CONFLICT (stream_id) DO UPDATE SET
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, NOW(), NOW())
+        ON CONFLICT (camera_id) DO UPDATE SET
+            stream_id = EXCLUDED.stream_id,
             streamserver_id = EXCLUDED.streamserver_id,
             streamserver_host = EXCLUDED.streamserver_host,
             status = EXCLUDED.status,
@@ -129,15 +256,16 @@ def upsert_stream_data_into_db(stream_data, camera_id):
             video_codec = EXCLUDED.video_codec,
             transport_type = EXCLUDED.transport_type,
             live_url = EXCLUDED.live_url,
-            info = EXCLUDED.info
+            info = EXCLUDED.info,
+            updated_at = NOW();
         """
         cursor.execute(upsert_query, (
-            stream_data.get('streamserver_id', 'unknown'),
+            stream_id,
             camera_id,
-            stream_data.get('streamserver_id', 'unknown'),
-            stream_data.get('streamserver_host', 'unknown'),
-            stream_data.get('status', 'unknown'),
-            stream_data.get('ts', 0),
+            stream_data.get('streamserver_id') or 'unknown',
+            stream_data.get('streamserver_host') or 'unknown',
+            stream_data.get('status') or 'unknown',
+            stream_data.get('ts') or 0,
             audio_codec,
             audio_sample_rate,
             total_bit_rate,
@@ -146,25 +274,22 @@ def upsert_stream_data_into_db(stream_data, camera_id):
             frame_height,
             video_codec,
             transport_type,
-            stream_data.get('live_url', 'unknown'),
+            stream_data.get('live_url') or 'unknown',
             Json(info)
         ))
 
         conn.commit()
-        print(f"Stream data upserted successfully for camera_id {camera_id}.")
-    except AttributeError as e:
-        print(f"Failed to upsert stream data into the database for camera_id {camera_id}: {e}")
-        print(f"Stream data received: {stream_data}")
-        conn.rollback()
+        logger.info(f"Stream data upserted successfully for camera_id {camera_id}.")
+        insert_into_historical_table(stream_data, camera_id)
     except Exception as e:
-        print(f"Failed to upsert stream data into the database for camera_id {camera_id}: {e}")
+        logger.error(f"Failed to upsert stream data into the database for camera_id {camera_id}: {e}")
         conn.rollback()
     finally:
         cursor.close()
         conn.close()
 
-# Function to fetch all camera IDs from the database
-def fetch_all_camera_ids():
+# Function to fetch distinct camera IDs from the database
+def fetch_distinct_camera_ids():
     try:
         conn = psycopg2.connect(
             host=DB_HOST,
@@ -174,52 +299,99 @@ def fetch_all_camera_ids():
             password=DB_PASSWORD
         )
         cursor = conn.cursor()
-        cursor.execute("SELECT camera_id FROM esvm_cameras")
+        cursor.execute("SELECT DISTINCT camera_id FROM esvm_cameras")
         camera_ids = cursor.fetchall()
         return [camera_id[0] for camera_id in camera_ids]
     except Exception as e:
-        print("Failed to fetch camera IDs:", str(e))
+        logger.error("Failed to fetch camera IDs: " + str(e))
         return []
     finally:
         cursor.close()
         conn.close()
 
-# Function to refresh token
-def refresh_token(url, login, password):
-    while True:
-        token = get_token(url, login, password)
-        if token:
-            print("New token obtained:", token)
-            yield token
-            time.sleep(30 * 60)  # Sleep for 30 minutes before refreshing the token again
+# Function to fetch existing camera IDs from the esvm_streams table
+def fetch_existing_camera_ids():
+    try:
+        conn = psycopg2.connect(
+            host=DB_HOST,
+            port=DB_PORT,
+            dbname=DB_NAME,
+            user=DB_USER,
+            password=DB_PASSWORD
+        )
+        cursor = conn.cursor()
+        cursor.execute("SELECT DISTINCT camera_id FROM esvm_streams")
+        existing_camera_ids = cursor.fetchall()
+        return {camera_id[0] for camera_id in existing_camera_ids}
+    except Exception as e:
+        logger.error("Failed to fetch existing camera IDs: " + str(e))
+        return set()
+    finally:
+        cursor.close()
+        conn.close()
+
+# Obtain initial token
+access_token, refresh_token_value = get_token(token_url, login, password)
+
+# Keep track of processed camera IDs
+processed_camera_ids = set()
+
+def process_camera(camera_id):
+    global access_token, refresh_token_value, processed_camera_ids
+    try:
+        # Construct the stream URL for each camera_id
+        stream_url = f"https://esvm.kz/api/v1/streams/{camera_id}"
+        stream_data = get_stream_data(stream_url, access_token)
+
+        # Check if stream data obtained successfully
+        if stream_data is not None:
+            # logger.info(f"Stream data for camera_id {camera_id}: {stream_data}")
+            upsert_stream_data_into_db(stream_data, camera_id)
         else:
-            print("Token refresh failed. Retrying in 5 seconds...")
-            time.sleep(5)
+            mark_camera_as_inactive(camera_id)
+        processed_camera_ids.add(camera_id)
+    except PermissionError:
+        logger.warning("Token expired. Refreshing token...")
+        access_token, refresh_token_value = refresh_token(refresh_token_url, refresh_token_value)
+        if not access_token:
+            logger.error("Failed to refresh token. Re-authenticating...")
+            access_token, refresh_token_value = get_token(token_url, login, password)
+            if not access_token:
+                logger.error("Failed to re-authenticate. Exiting...")
+                raise RuntimeError("Failed to re-authenticate. Exiting...")
+        process_camera(camera_id)  # Retry after refreshing the token
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Request failed: {e}. Retrying in 10 seconds...")
+        time.sleep(10)
+        process_camera(camera_id)  # Retry after a delay
 
-# URL and credentials to obtain initial token
-token_url = os.getenv.env('token_url')
-login = os.getenv.env('login')
-password = os.getenv.env('password')
+# Function to start the processing loop
+def start_processing_loop():
+    global access_token, refresh_token_value, processed_camera_ids
+    while True:
+        # Fetch distinct camera IDs
+        camera_ids = fetch_distinct_camera_ids()
+        if not camera_ids:
+            logger.error("No camera IDs found. Exiting...")
+            break
 
-# Obtain token
-token_generator = refresh_token(token_url, login, password)
-token = next(token_generator)
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            futures = [executor.submit(process_camera, camera_id) for camera_id in camera_ids]
+            for future in tqdm(as_completed(futures), total=len(camera_ids), desc="Processing cameras"):
+                try:
+                    future.result()
+                except Exception as e:
+                    logger.error(f"Error processing camera: {e}")
 
-# Check if token obtained successfully
-if token:
-    # Fetch all camera IDs
-    camera_ids = fetch_all_camera_ids()
+        logger.info("Finished processing all camera IDs. Restarting...")
 
-    if camera_ids:
-        for camera_id in tqdm(camera_ids, desc="Processing cameras"):
-            # Construct the stream URL for each camera_id
-            stream_url = f"https://esvm.kz/api/v1/streams/{camera_id}"
-            stream_data = get_stream_data(stream_url, token)
+# Check if tokens obtained successfully
+if access_token and refresh_token_value:
+    # Start the token refresh thread
+    token_refresh_thread = threading.Thread(target=refresh_token_periodically, daemon=True)
+    token_refresh_thread.start()
 
-            # Check if stream data obtained successfully
-            if stream_data is not None:
-                upsert_stream_data_into_db(stream_data, camera_id)
-            else:
-                mark_camera_as_inactive(camera_id)
+    # Start the processing loop
+    start_processing_loop()
 else:
-    print("Token not obtained. Cannot retrieve stream data.")
+    logger.error("Token not obtained. Cannot retrieve stream data.")

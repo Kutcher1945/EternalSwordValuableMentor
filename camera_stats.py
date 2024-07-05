@@ -1,7 +1,8 @@
 import requests
 import psycopg2
-from datetime import datetime, time
+from datetime import datetime
 import time as tm
+import threading
 
 # Database connection parameters
 DB_HOST = '172.30.227.205'
@@ -20,22 +21,38 @@ def get_token(url, login, password):
     response = requests.post(url, data=payload)
     if response.status_code == 200:
         data = response.json()
-        return data.get("access_token")
+        return data.get("access_token"), data.get("refresh_token")
     else:
         print("Failed to obtain token. Status code:", response.status_code)
-        return None
+        return None, None
 
 # Function to refresh token
-def refresh_token(url, login, password):
+def refresh_token(url, refresh_token):
+    payload = {
+        "grant_type": "refresh_token",
+        "refresh_token": refresh_token
+    }
+    response = requests.post(url, data=payload)
+    if response.status_code == 200:
+        data = response.json()
+        print("Token refreshed successfully.")
+        return data.get("access_token"), data.get("refresh_token")
+    else:
+        print(f"Failed to refresh token. Status code: {response.status_code}, Response: {response.text}")
+        return None, None
+
+# Function to periodically refresh the token
+def refresh_token_periodically(token_url, login, password):
+    global access_token, refresh_token_value
     while True:
-        token = get_token(url, login, password)
-        if token:
-            print("New token obtained:", token)
-            yield token
-            tm.sleep(30 * 60)  # Sleep for 30 minutes before refreshing the token again
-        else:
-            print("Token refresh failed. Retrying in 5 seconds...")
-            tm.sleep(5)
+        tm.sleep(1740)  # Sleep for 29 minutes (29 * 60 = 1740 seconds)
+        access_token, refresh_token_value = refresh_token(token_url, refresh_token_value)
+        if not access_token:
+            print("Failed to refresh token. Re-authenticating...")
+            access_token, refresh_token_value = get_token(token_url, login, password)
+            if not access_token:
+                print("Failed to re-authenticate. Exiting...")
+                raise RuntimeError("Failed to re-authenticate. Exiting...")
 
 # Function to create stats table if not exists
 def create_stats_table_if_not_exists():
@@ -217,11 +234,14 @@ login = "cra_api@esvm.kz"
 password = "qyKoZ7wosJf2W7AhOFINz5clCyOdKtD0"
 
 # Obtain token
-token_generator = refresh_token(token_url, login, password)
-token = next(token_generator)
+access_token, refresh_token_value = get_token(token_url, login, password)
 
 # Check if token obtained successfully
-if token:
+if access_token:
+    # Start the token refresh thread
+    token_refresh_thread = threading.Thread(target=refresh_token_periodically, args=(token_url, login, password), daemon=True)
+    token_refresh_thread.start()
+
     # Create stats table if not exists
     create_stats_table_if_not_exists()
 
@@ -231,7 +251,7 @@ if token:
     while True:
         # Fetch camera stats
         stats_url = "https://esvm.kz/api/v1/stats/cameras"
-        stats_data = get_camera_stats(stats_url, token)
+        stats_data = get_camera_stats(stats_url, access_token)
 
         # Check if stats data obtained successfully
         if stats_data is not None:
