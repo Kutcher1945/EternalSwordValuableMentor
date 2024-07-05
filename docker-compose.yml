@@ -79,3 +79,13 @@ services:
     environment:
       - TZ=Asia/Atyrau
     restart: always
+
+  camera_stats:
+    container_name: camera_stats
+    build:
+      context: .
+      dockerfile: Dockerfile.camera_stats
+    command: python camera_stats.py
+    environment:
+      - TZ=Asia/Atyrau
+    restart: always
