@@ -60,6 +60,7 @@ def create_table_if_not_exists():
             plan_y NUMERIC,
             ptz JSONB,
             scheduler_tags JSONB,
+            geom GEOMETRY,
             is_deleted BOOLEAN DEFAULT FALSE
         )
         """
@@ -184,9 +185,10 @@ def insert_data_into_db(data):
                 plan_y,
                 ptz,
                 scheduler_tags,
+                geom,
                 is_deleted
             )
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, FALSE)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ST_SetSRID(ST_MakePoint(%s, %s), 4326), FALSE)
             """
             cursor.execute(insert_query, (
                 data.get("id"),  # Using ID as camera_id
@@ -215,13 +217,16 @@ def insert_data_into_db(data):
                 data.get("plan_x"),
                 data.get("plan_y"),
                 json.dumps(data.get("ptz")),
-                json.dumps(data.get("scheduler_tags"))
+                json.dumps(data.get("scheduler_tags")),
+                data.get("origin", {}).get("place_longitude"),
+                data.get("origin", {}).get("place_latitude")
             ))
+            logger.info(f"New camera ID inserted: {data.get('id')}")
 
         conn.commit()
 
-        # Execute the update scripts for geometry and address_id if necessary
-        execute_update_scripts(conn, cursor)
+        # Check if geom is NULL and set is_deleted to TRUE if it is
+        set_is_deleted_if_geom_null(cursor, data["id"])
 
     except psycopg2.IntegrityError as e:
         # Ignore duplicates
@@ -233,29 +238,17 @@ def insert_data_into_db(data):
         cursor.close()
         conn.close()
 
-def execute_update_scripts(conn, cursor):
-    # Execute the update script for geom column
-    update_geom_query = """
+def set_is_deleted_if_geom_null(cursor, camera_id):
+    update_query = """
     UPDATE esvm_cameras
-    SET geom = ST_SetSRID(ST_MakePoint(place_longitude, place_latitude), 4326)
-    WHERE address_id IS NULL;
+    SET is_deleted = TRUE
+    WHERE camera_id = %s AND geom IS NULL
+    RETURNING camera_id
     """
-    cursor.execute(update_geom_query)
-
-    # Execute the update script for address_id column
-    update_address_query = """
-    UPDATE esvm_cameras AS r
-    SET address_id = (
-        SELECT s.id
-        FROM address_buildings AS s
-        ORDER BY r.geom <-> s.marker
-        LIMIT 1
-    )
-    WHERE address_id IS NULL;
-    """
-    cursor.execute(update_address_query)
-
-    conn.commit()
+    cursor.execute(update_query, (camera_id,))
+    deleted_camera_id = cursor.fetchone()
+    if deleted_camera_id:
+        logger.info(f"Camera ID {deleted_camera_id[0]} set to deleted due to NULL geom.")
 
 @retry(wait_exponential_multiplier=1000, wait_exponential_max=10000, stop_max_attempt_number=5)
 def get_cameras_data_with_retry(url, token, cursor=None):
@@ -327,11 +320,13 @@ def mark_camera_as_deleted(camera_id):
         )
         cursor = conn.cursor()
 
-        update_query = "UPDATE esvm_cameras SET is_deleted = TRUE WHERE camera_id = %s"
+        update_query = "UPDATE esvm_cameras SET is_deleted = TRUE WHERE camera_id = %s RETURNING camera_id"
         cursor.execute(update_query, (camera_id,))
 
         conn.commit()
-        logger.info(f"Camera {camera_id} marked as deleted.")
+        deleted_camera_id = cursor.fetchone()
+        if deleted_camera_id:
+            logger.info(f"Camera ID marked as deleted: {deleted_camera_id[0]}")
     except Exception as e:
         logger.error(f"Failed to mark camera as deleted: {str(e)}")
         conn.rollback()
