@@ -7,7 +7,6 @@ import threading
 from retrying import retry
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timedelta
 
 # Database connection parameters
 DB_HOST = '172.30.227.205'
@@ -395,39 +394,6 @@ def mark_camera_as_deleted(camera_id):
         cursor.close()
         conn.close()
 
-# Function to mark cameras as deleted if not updated for 3 days
-def mark_cameras_as_deleted_if_not_updated():
-    try:
-        conn = psycopg2.connect(
-            host=DB_HOST,
-            port=DB_PORT,
-            dbname=DB_NAME,
-            user=DB_USER,
-            password=DB_PASSWORD
-        )
-        cursor = conn.cursor()
-
-        three_days_ago = datetime.now() - timedelta(days=3)
-        update_query = """
-        UPDATE esvm_cameras
-        SET is_deleted = TRUE
-        WHERE updated_at < %s
-        RETURNING camera_id
-        """
-        cursor.execute(update_query, (three_days_ago,))
-        deleted_cameras = cursor.fetchall()
-        if deleted_cameras:
-            for deleted_camera_id in deleted_cameras:
-                logger.info(f"Camera ID {deleted_camera_id[0]} marked as deleted due to no updates in the last 3 days.")
-
-        conn.commit()
-    except Exception as e:
-        logger.error(f"Failed to mark cameras as deleted due to no updates in the last 3 days: {str(e)}")
-        conn.rollback()
-    finally:
-        cursor.close()
-        conn.close()
-
 # URL and credentials to obtain initial token
 token_url = "https://esvm.kz/api/v1/token"
 login = "cra_api@esvm.kz"
@@ -492,9 +458,6 @@ if access_token:
             all_camera_ids = {row[0] for row in cursor.fetchall()}
             for camera_id in all_camera_ids - existing_camera_ids:
                 mark_camera_as_deleted(camera_id)
-
-            # Mark cameras as deleted if not updated for 3 days
-            mark_cameras_as_deleted_if_not_updated()
 
         except requests.exceptions.HTTPError as e:
             if e.response.status_code == 401:
