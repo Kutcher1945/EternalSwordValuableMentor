@@ -61,7 +61,12 @@ def create_table_if_not_exists():
             ptz JSONB,
             scheduler_tags JSONB,
             geom GEOMETRY,
-            is_deleted BOOLEAN DEFAULT FALSE
+            is_deleted BOOLEAN DEFAULT FALSE,
+            is_ao BOOLEAN DEFAULT FALSE,
+            is_fr BOOLEAN DEFAULT FALSE,
+            is_lpr BOOLEAN DEFAULT FALSE,
+            is_sa BOOLEAN DEFAULT FALSE,
+            is_tp BOOLEAN DEFAULT FALSE
         )
         """
 
@@ -75,6 +80,38 @@ def create_table_if_not_exists():
         cursor.close()
         conn.close()
 
+# Function to extract module information and set boolean fields
+def extract_module_info(video_analytics):
+    if video_analytics is None:
+        return {
+            "is_ao": False,
+            "is_fr": False,
+            "is_lpr": False,
+            "is_sa": False,
+            "is_tp": False
+        }
+    modules = video_analytics.get("modules", [])
+    module_info = {
+        "is_ao": False,
+        "is_fr": False,
+        "is_lpr": False,
+        "is_sa": False,
+        "is_tp": False
+    }
+    for module in modules:
+        module_name = module.get("module")
+        if module_name == "AbandonedObjectsModule":
+            module_info["is_ao"] = True
+        elif module_name == "FaceRecognitionModule":
+            module_info["is_fr"] = True
+        elif module_name == "LicensePlateRecognitionModule":
+            module_info["is_lpr"] = True
+        elif module_name == "SituationAnalyticsModule":
+            module_info["is_sa"] = True
+        elif module_name == "TamperingModule":
+            module_info["is_tp"] = True
+    return module_info
+
 # Function to insert or update data in the database
 def insert_data_into_db(data):
     try:
@@ -86,6 +123,9 @@ def insert_data_into_db(data):
             password=DB_PASSWORD
         )
         cursor = conn.cursor()
+
+        video_analytics = data.get("video_analytics", {})
+        module_info = extract_module_info(video_analytics)
 
         # Check if the camera already exists in the database
         select_query = "SELECT camera_id FROM esvm_cameras WHERE camera_id = %s"
@@ -122,7 +162,12 @@ def insert_data_into_db(data):
                 plan_y = %s,
                 ptz = %s,
                 scheduler_tags = %s,
-                is_deleted = FALSE
+                is_deleted = FALSE,
+                is_ao = %s,
+                is_fr = %s,
+                is_lpr = %s,
+                is_sa = %s,
+                is_tp = %s
             WHERE camera_id = %s
             """
             cursor.execute(update_query, (
@@ -152,6 +197,11 @@ def insert_data_into_db(data):
                 data.get("plan_y"),
                 json.dumps(data.get("ptz")),
                 json.dumps(data.get("scheduler_tags")),
+                module_info["is_ao"],
+                module_info["is_fr"],
+                module_info["is_lpr"],
+                module_info["is_sa"],
+                module_info["is_tp"],
                 data["id"]
             ))
         else:
@@ -186,9 +236,14 @@ def insert_data_into_db(data):
                 ptz,
                 scheduler_tags,
                 geom,
-                is_deleted
+                is_deleted,
+                is_ao,
+                is_fr,
+                is_lpr,
+                is_sa,
+                is_tp
             )
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ST_SetSRID(ST_MakePoint(%s, %s), 4326), FALSE)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ST_SetSRID(ST_MakePoint(%s, %s), 4326), FALSE, %s, %s, %s, %s, %s)
             """
             cursor.execute(insert_query, (
                 data.get("id"),  # Using ID as camera_id
@@ -219,7 +274,12 @@ def insert_data_into_db(data):
                 json.dumps(data.get("ptz")),
                 json.dumps(data.get("scheduler_tags")),
                 data.get("origin", {}).get("place_longitude"),
-                data.get("origin", {}).get("place_latitude")
+                data.get("origin", {}).get("place_latitude"),
+                module_info["is_ao"],
+                module_info["is_fr"],
+                module_info["is_lpr"],
+                module_info["is_sa"],
+                module_info["is_tp"]
             ))
             logger.info(f"New camera ID inserted: {data.get('id')}")
 
