@@ -289,7 +289,7 @@ def insert_data_into_db(data):
         set_is_deleted_if_geom_null(cursor, data["id"])
 
     except psycopg2.IntegrityError as e:
-        # Ignore duplicates
+        logger.error(f"IntegrityError while inserting/updating data: {str(e)}")
         conn.rollback()
     except Exception as e:
         logger.error(f"Failed to insert/update data into the database: {str(e)}")

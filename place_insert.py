@@ -117,6 +117,7 @@ def insert_places_data_into_db(place_data):
                 group_id, kind, plan_count, tags, updated_at,
                 place_id
             ))
+            print(f"Updated place with place_id: {place_id}")
         else:
             # Insert a new record
             cursor.execute(insert_query, (
@@ -124,11 +125,11 @@ def insert_places_data_into_db(place_data):
                 camera_count, category, cohort_tracking, created_at, 
                 group_id, kind, plan_count, tags, updated_at
             ))
+            print(f"Inserted new place with place_id: {place_id}")
 
         conn.commit()
-        # No need to print for each record insertion
     except psycopg2.IntegrityError as e:
-        # Ignore duplicates
+        print(f"IntegrityError while inserting/updating data: {str(e)}")
         conn.rollback()
     except Exception as e:
         print("Failed to insert/update data into the database:", str(e))
@@ -136,7 +137,6 @@ def insert_places_data_into_db(place_data):
     finally:
         cursor.close()
         conn.close()
-
 
 @retry(wait_exponential_multiplier=1000, wait_exponential_max=10000, stop_max_attempt_number=5)
 def get_places_data_with_retry(url, token, cursor=None):
@@ -217,16 +217,15 @@ def main():
 
                 for place in tqdm(places_data, desc="Inserting/Updating Places Data"):
                     place_id = place.get("id")
-                    if place_id not in existing_place_ids:
-                        insert_places_data_into_db(place)
-                        existing_place_ids.add(place_id)
+                    insert_places_data_into_db(place)
+                    existing_place_ids.add(place_id)
 
                 if not cursor:
                     break
         except Exception as e:
             print("Failed to retrieve or insert data:", str(e))
         finally:
-            time.sleep(10)  # Wait for 5 minutes before restarting the loop
+            time.sleep(10)  # Wait for 10 seconds before restarting the loop
 
 if __name__ == "__main__":
     main()
