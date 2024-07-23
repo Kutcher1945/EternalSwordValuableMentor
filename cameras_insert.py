@@ -493,4 +493,4 @@ if access_token:
             logger.error(f"An error occurred: {str(e)}")
             break
 else:
-    logger.error("Token not obtained. Cannot retrieve cameras data.")
+    logger.error("Token not obtained or Failed. Cannot retrieve cameras data.")
