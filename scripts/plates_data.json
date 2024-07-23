@@ -1,876 +1,639 @@
 {
     "pagination": {
-        "cursor": "eyJuYW1lIjoiMTM4IEhpZ2ggU2Nob29sLCDQmtCw0LzQtdGA0LAtMTQiLCJpZCI6IjI5Y2FkMGU2LWMxYzctNGJkMS1hODExLWEyYjk1NjFhODU3OSJ9"
+        "cursor": "eyJuYW1lIjoiNS3QuSDQvNC40LrRgNC-0YDQsNC50L7QvSwgNDkvMSDQr9Ch0JvQmC3QodCQ0JQg4oSWMTM1In0="
     },
-    "cameras": [
+    "places": [
         {
-            "name": "10.209.31.115 fix2 ",
-            "source": {
-                "url": "rtsp://admin:campas123@10.209.31.115:554/cam/realmonitor?channel=1&subtype=0"
+            "name": "10-микрорайон 11а",
+            "description": "11А, Алматы",
+            "latitude": 43.21866465,
+            "longitude": 76.86676770454568,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 7708,
+            "created_at": "2023-08-22T09:33:49.465558Z",
+            "updated_at": "2023-11-10T04:01:06.830786Z",
+            "plan_count": 0,
+            "camera_count": 3,
+            "category": {
+                "name": "Магазины",
+                "parent_id": 10,
+                "id": 277,
+                "path": "10.277"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": {},
-            "place_id": 4903,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "cd8d54e54c767f03",
-            "id": "45217d21-62d0-418e-96e5-d477a8a16232",
-            "created_at": "2022-12-29T07:25:17.874974Z",
-            "updated_at": "2024-04-30T06:25:25.737974Z",
-            "snapshot_url": "https://cd8d54e54c767f03.esvm.kz/s3/vab/2024/7/4/45217d21-62d0-418e-96e5-d477a8a16232.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC80NTIxN2QyMS02MmQwLTQxOGUtOTZlNS1kNDc3YThhMTYyMzIuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.aK4UubOLcj_XRObh5a2IB2EXTk-q0XUyoaz5-7qmnlw",
-            "origin": {
-                "place_id": 4903,
-                "place_name": "ОВН 855  ул. Жибек Жолы д.З9, ул. Жибек Жолы д.З7, ул. Алимжанова д.З2",
-                "place_description": null,
-                "place_latitude": 43.263054,
-                "place_longitude": 76.957938,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
-        },
-        {
-            "name": "10.209.31.117 fix4 ",
-            "source": {
-                "url": "rtsp://admin:campas123@10.209.31.117:554/cam/realmonitor?channel=1&subtype=0"
-            },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 4903,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "7befa32eaab609b2",
-            "id": "41691a69-be33-4dd9-baa9-28a8fa9e3f4a",
-            "created_at": "2022-12-29T07:25:23.964478Z",
-            "updated_at": "2024-04-30T06:25:19.917649Z",
-            "snapshot_url": "https://7befa32eaab609b2.esvm.kz/s3/vab/2024/7/4/41691a69-be33-4dd9-baa9-28a8fa9e3f4a.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC80MTY5MWE2OS1iZTMzLTRkZDktYmFhOS0yOGE4ZmE5ZTNmNGEuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.rL1Nhaq5Laif1XmtEc4oFXuxEelU08HwFPci5f59opU",
-            "origin": {
-                "place_id": 4903,
-                "place_name": "ОВН 855  ул. Жибек Жолы д.З9, ул. Жибек Жолы д.З7, ул. Алимжанова д.З2",
-                "place_description": null,
-                "place_latitude": 43.263054,
-                "place_longitude": 76.957938,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
-        },
-        {
-            "name": "10-мкр. 11а, Жилой дом, Камера-01, Переулок",
-            "source": {
-                "url": "rtsp://admin:campas123@10.209.62.34:554/cam/realmonitor?channel=1&subtype=0"
-            },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": {},
-            "place_id": 416,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "7befa32eaab609b2",
-            "id": "7bac1175-7556-4428-ba4e-07029a44dd11",
-            "created_at": "2022-12-07T10:31:20.595309Z",
-            "updated_at": "2024-04-30T06:25:32.263258Z",
-            "snapshot_url": "https://7befa32eaab609b2.esvm.kz/s3/vab/2024/7/4/7bac1175-7556-4428-ba4e-07029a44dd11.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC83YmFjMTE3NS03NTU2LTQ0MjgtYmE0ZS0wNzAyOWE0NGRkMTEuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.RqhcEYiXYdCHsiVErGP45vkGF5Pnk2jTTD6iYvG3J7k",
-            "origin": {
-                "place_id": 416,
-                "place_name": "10-мкр. 11а, Жилой дом",
-                "place_description": "10-микрорайон, 11а",
-                "place_latitude": 43.21866074769997,
-                "place_longitude": 76.86679547377167,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "user_action"
-        },
-        {
-            "name": "​11-й мкр. 3/1, ​Бизнес-центр Ayala, Камера-01, Стоп-линия",
-            "source": {
-                "url": "rtsp://operator1:chah7Cho@172.24.8.26:554/MediaInput/h264"
-            },
-            "video_analytics": {
-                "modules": [
-                    {
-                        "config": {
-                            "roi": [],
-                            "lines": [
-                                {
-                                    "id": "e8b648a6-2c76-4097-bb89-94cf3aa193f6",
-                                    "name": "Поток машин",
-                                    "coords": [
-                                        0.2303428816224382,
-                                        0.9834616856405184,
-                                        0.7768724132239,
-                                        0.41587430421255905
-                                    ],
-                                    "direction": 0,
-                                    "obj_classes": [
-                                        2
-                                    ]
-                                }
-                            ],
-                            "min_detection_size": 0.03
-                        },
-                        "module": "SituationAnalyticsModule"
-                    }
-                ],
-                "version": 5
-            },
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 7
-            },
-            "ptz": {},
-            "place_id": 418,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "dp-archive",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "d1f233580cbcd207",
-            "id": "a0778466-627a-46c2-9869-a9eb97b2aa68",
-            "created_at": "2022-10-10T05:33:21.125967Z",
-            "updated_at": "2024-07-03T08:57:25.616268Z",
-            "snapshot_url": "https://d1f233580cbcd207.esvm.kz/s3/vab/2024/7/4/a0778466-627a-46c2-9869-a9eb97b2aa68.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9hMDc3ODQ2Ni02MjdhLTQ2YzItOTg2OS1hOWViOTdiMmFhNjguanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.v6PFcX-pPtHUognZlYeGq34qM5ktTNnta1n7hWdZumU",
-            "origin": {
-                "place_id": 418,
-                "place_name": "​11-й мкр. 3/1, ​Бизнес-центр Ayala",
-                "place_description": "улица Шаляпина, Алматы",
-                "place_latitude": 43.221649,
-                "place_longitude": 76.869756,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
-        },
-        {
-            "name": "125 High School, Камера-01",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=1&subtype=1"
-            },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "983bc581b251a48c",
-            "id": "5eaba509-41c1-4b1d-9e5b-dba713a43abb",
-            "created_at": "2024-02-16T05:37:59.422527Z",
-            "updated_at": "2024-05-24T12:07:56.096283Z",
-            "snapshot_url": "https://983bc581b251a48c.esvm.kz/s3/vab/2024/7/4/5eaba509-41c1-4b1d-9e5b-dba713a43abb.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC81ZWFiYTUwOS00MWMxLTRiMWQtOWU1Yi1kYmE3MTNhNDNhYmIuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.WpXydVuNrYz2cHjhbK4BQpFSZM3M709b_NuiVOB1Xjk",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
-        },
-        {
-            "name": "126 High School, Камера-02",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=2&subtype=0",
-                "body": {
-                    "host": "10.128.109.129",
-                    "path": "/cam/realmonitor?channel=2&subtype=0",
-                    "port": 554,
-                    "password": "125hsAlmaty",
-                    "protocol": "rtsp",
-                    "username": "125",
-                    "transport": "tcp"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект СВМ ММС 1103",
+                    "id": 10
                 }
-            },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "79aba12f-bc94-472d-8e10-47a804b9dee4",
-            "created_at": "2024-02-16T05:38:10.358951Z",
-            "updated_at": "2024-06-27T13:22:06.764862Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/79aba12f-bc94-472d-8e10-47a804b9dee4.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC83OWFiYTEyZi1iYzk0LTQ3MmQtOGUxMC00N2E4MDRiOWRlZTQuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.9mJU5kx6FYy3PHU2UXXP46jy1SueZMNwQZUGcK5cqB8",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            ]
         },
         {
-            "name": "127 High School, Камера-03",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=3&subtype=1"
+            "name": "10-мкр. 11а, Жилой дом",
+            "description": "10-микрорайон, 11а",
+            "latitude": 43.21866074769997,
+            "longitude": 76.86679547377167,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 416,
+            "created_at": "2022-10-10T05:33:20.231757Z",
+            "updated_at": "2023-12-05T05:49:57.938867Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "Перекрестки и улицы",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "a42f8a22-925e-4533-8589-445c847f4868",
-            "created_at": "2024-02-16T05:38:22.061786Z",
-            "updated_at": "2024-06-14T11:41:23.156591Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/a42f8a22-925e-4533-8589-445c847f4868.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9hNDJmOGEyMi05MjVlLTQ1MzMtODU4OS00NDVjODQ3ZjQ4NjguanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.lE86hUuZXx6awKvxmBpwjicddeSebVSKFYKGKSDDIYo",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект СВМ ММС 3050",
+                    "id": 12
+                }
+            ]
         },
         {
-            "name": "128 High School, Камера-04",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=4&subtype=1"
+            "name": "​11-й мкр. 3/1, ​Бизнес-центр Ayala",
+            "description": "улица Шаляпина, Алматы",
+            "latitude": 43.221649,
+            "longitude": 76.869756,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 418,
+            "created_at": "2022-10-10T05:33:20.960862Z",
+            "updated_at": "2023-11-09T12:20:08.851425Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "Бизнес центры",
+                "parent_id": 10,
+                "id": 287,
+                "path": "10.287"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "923f09b5-5c90-4db9-bfc4-f5d0811eabee",
-            "created_at": "2024-02-16T05:38:34.453737Z",
-            "updated_at": "2024-06-06T01:26:18.073221Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/923f09b5-5c90-4db9-bfc4-f5d0811eabee.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC85MjNmMDliNS01YzkwLTRkYjktYmZjNC1mNWQwODExZWFiZWUuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.JkVRbqnyMSmbfYyLrlcLdYfPA3CNF6G0lckVaLSh6C0",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект СВМ ММС 1103",
+                    "id": 10
+                }
+            ]
         },
         {
-            "name": "129 High School, Камера-05",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=5&subtype=1"
+            "name": "13 Военный городок 11, Жилой дом",
+            "description": "ОВН 353, 360  13 Военный городок 11",
+            "latitude": 43.375965,
+            "longitude": 76.990512,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 4836,
+            "created_at": "2022-12-29T07:08:52.868265Z",
+            "updated_at": "2023-12-05T11:39:53.787726Z",
+            "plan_count": 0,
+            "camera_count": 4,
+            "category": {
+                "name": "Дворы и подъезды",
+                "parent_id": 4,
+                "id": 28,
+                "path": "4.28"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "e3482721-fd5e-44b8-90c2-1d376acaffc9",
-            "created_at": "2024-02-16T05:38:47.905168Z",
-            "updated_at": "2024-06-07T03:11:18.995830Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/e3482721-fd5e-44b8-90c2-1d376acaffc9.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9lMzQ4MjcyMS1mZDVlLTQ0YjgtOTBjMi0xZDM3NmFjYWZmYzkuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.H9X44K4fSS1c6bMTS7OXPP7iPlgXZr51pnhcTrcECdk",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Проект СВМ ММС 3050",
+                    "id": 12
+                },
+                {
+                    "name": "Турксибский р-н",
+                    "id": 7
+                }
+            ]
         },
         {
-            "name": "130 High School, Камера-06",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=6&subtype=1"
+            "name": "18-я ул. 24, Частный дом",
+            "description": "ОВН800 мкр.Алатау, ул. Жулдыз-1- ул, Жулдыз, ОВН 800",
+            "latitude": 43.16793789843976,
+            "longitude": 76.91632460078317,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 7771,
+            "created_at": "2023-10-05T06:58:44.998531Z",
+            "updated_at": "2023-12-05T11:40:05.158134Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "Перекрестки и улицы",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "a19f5898-480f-4308-bf36-e0101c6ab6c4",
-            "created_at": "2024-02-16T05:39:03.291394Z",
-            "updated_at": "2024-06-06T19:11:18.844492Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/a19f5898-480f-4308-bf36-e0101c6ab6c4.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9hMTlmNTg5OC00ODBmLTQzMDgtYmYzNi1lMDEwMWM2YWI2YzQuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.OzuDONqWaNi5h4Y2sTPKDUfrB6BN7xOqFYMy5i7VV6g",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Проект СВМ ММС 3050",
+                    "id": 12
+                }
+            ]
         },
         {
-            "name": "131 High School, Камера-07",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=7&subtype=1"
+            "name": "​1-й микрорайон, 64а САНАТОРНЫЙ ЯСЛИ-САД №25",
+            "description": "улица Жубанова, Алматы",
+            "latitude": 43.232118,
+            "longitude": 76.849602,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 7544,
+            "created_at": "2023-07-18T05:05:38.799912Z",
+            "updated_at": "2024-05-22T12:33:09.794580Z",
+            "plan_count": 2,
+            "camera_count": 16,
+            "category": {
+                "name": "Санаторные ясли-сады",
+                "parent_id": 19,
+                "id": 238,
+                "path": "19.238"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "4fe58b47-9631-4ea2-8d94-0ca9a240910a",
-            "created_at": "2024-02-16T05:39:15.292762Z",
-            "updated_at": "2024-06-06T13:56:18.843611Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/4fe58b47-9631-4ea2-8d94-0ca9a240910a.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC80ZmU1OGI0Ny05NjMxLTRlYTItOGQ5NC0wY2E5YTI0MDkxMGEuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.uKJq3F9jVUlceokcEjPLIh94MEBMDI-A-cBExZqSvNc",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
         },
         {
-            "name": "132 High School, Камера-08",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=8&subtype=1"
+            "name": "1-й мкр. 81Б, ​Административное здание",
+            "description": "Саина-Улугбека",
+            "latitude": 43.2267,
+            "longitude": 76.845581,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 392,
+            "created_at": "2022-10-10T05:33:12.501278Z",
+            "updated_at": "2023-09-26T06:55:41.946347Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "Перекрестки и улицы",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "e17ee086-cfb6-4254-8bab-c22e9ad12cdd",
-            "created_at": "2024-02-16T05:39:27.362023Z",
-            "updated_at": "2024-06-14T12:56:23.087857Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/e17ee086-cfb6-4254-8bab-c22e9ad12cdd.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9lMTdlZTA4Ni1jZmI2LTQyNTQtOGJhYi1jMjJlOWFkMTJjZGQuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.WxqiO5N7qrG_UZ9uLr3lp-QgdtTzb70yuRZkZR5vRS8",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект СВМ ММС 1103",
+                    "id": 10
+                }
+            ]
         },
         {
-            "name": "133 High School, Камера-09",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=9&subtype=1"
+            "name": "1 мкр. дом 68Б КГУ Специальная организация образования",
+            "description": "68А, Алматы",
+            "latitude": 43.23422695,
+            "longitude": 76.85238022689148,
+            "cohort_tracking": false,
+            "group_id": 75,
+            "id": 21173,
+            "created_at": "2024-06-21T05:34:32.950987Z",
+            "updated_at": "2024-06-21T06:00:36.635688Z",
+            "plan_count": 0,
+            "camera_count": 28,
+            "category": {
+                "name": "Учебно-воспитательный комплекс",
+                "parent_id": 20,
+                "id": 234,
+                "path": "20.234"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "f9e38cd6-d495-4103-9756-be986fcac303",
-            "created_at": "2024-02-16T05:39:38.607145Z",
-            "updated_at": "2024-06-14T12:56:23.087857Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/f9e38cd6-d495-4103-9756-be986fcac303.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9mOWUzOGNkNi1kNDk1LTQxMDMtOTc1Ni1iZTk4NmZjYWMzMDMuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.3OwL06En_EOMI7er3HGu68sd8PcnQL03k8udZArb10k",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
         },
         {
-            "name": "133Ф КУ2-1 109",
-            "source": {
-                "url": "rtsp://operator1:chah7Cho@172.24.28.55:554/MediaInput/h264"
+            "name": "2-ая Братская уг улицы Фадеева",
+            "description": "улица Фадеева, 42, Алматы",
+            "latitude": 43.263018,
+            "longitude": 76.874834,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 2713,
+            "created_at": "2022-10-24T06:01:40.359273Z",
+            "updated_at": "2023-11-10T05:27:00.447104Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "Дворы и подъезды",
+                "parent_id": 4,
+                "id": 28,
+                "path": "4.28"
             },
-            "video_analytics": {
-                "modules": [
-                    {
-                        "config": {
-                            "roi": [],
-                            "lines": [
-                                {
-                                    "id": "2a9ade28-7134-4d8c-ac70-a3a2691673d0",
-                                    "name": "Переход в неположенном месте",
-                                    "coords": [
-                                        0.0001,
-                                        0.5522791734691653,
-                                        0.9939017660969636,
-                                        0.5674998503964268
-                                    ],
-                                    "direction": 0,
-                                    "obj_classes": [
-                                        1
-                                    ]
-                                }
-                            ],
-                            "min_detection_size": 0.03
-                        },
-                        "module": "SituationAnalyticsModule"
-                    }
-                ],
-                "version": 5
-            },
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 7
-            },
-            "ptz": {},
-            "place_id": 316,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "dp-archive",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "d1f233580cbcd207",
-            "id": "03ed90da-f9a6-405c-b323-9186a42dd1f6",
-            "created_at": "2022-10-10T05:32:49.070214Z",
-            "updated_at": "2024-07-03T08:57:23.678350Z",
-            "snapshot_url": "https://d1f233580cbcd207.esvm.kz/s3/vab/2024/7/4/03ed90da-f9a6-405c-b323-9186a42dd1f6.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC8wM2VkOTBkYS1mOWE2LTQwNWMtYjMyMy05MTg2YTQyZGQxZjYuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.r0lMlj2Fac7j9pI5byO9H9Dt5usRaT4_I7zRuWOkDSY",
-            "origin": {
-                "place_id": 316,
-                "place_name": "ул.Богенбай батыра 88",
-                "place_description": null,
-                "place_latitude": 43.253771,
-                "place_longitude": 76.957736,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "user_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Алатауский р-н",
+                    "id": 8
+                },
+                {
+                    "name": "Проект дворы и подъезды 4244",
+                    "id": 14
+                }
+            ]
         },
         {
-            "name": "134 High School, Камера-10",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=10&subtype=1"
+            "name": "​2-й микрорайон, 57 КОРРЕКЦИОННЫЙ ЯСЛИ-САД № 24",
+            "description": "57, Алматы",
+            "latitude": 43.235273,
+            "longitude": 76.860636,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 7263,
+            "created_at": "2023-07-12T10:05:09.948277Z",
+            "updated_at": "2024-05-22T12:33:06.863574Z",
+            "plan_count": 0,
+            "camera_count": 15,
+            "category": {
+                "name": "Коррекционные ясли-сады",
+                "parent_id": 19,
+                "id": 237,
+                "path": "19.237"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "3236be9e-07d1-494e-9efe-45d89acb92bb",
-            "created_at": "2024-02-16T05:39:52.509187Z",
-            "updated_at": "2024-06-16T13:56:23.838298Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/3236be9e-07d1-494e-9efe-45d89acb92bb.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC8zMjM2YmU5ZS0wN2QxLTQ5NGUtOWVmZS00NWQ4OWFjYjkyYmIuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.lf1N2fJBNJjkElJnd6uHgMq5aukA2RCbjB5LWu8Cqkc",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
         },
         {
-            "name": "134Ф КУ2-2 122",
-            "source": {
-                "url": "rtsp://operator1:chah7Cho@172.24.28.37:554/MediaInput/h264"
+            "name": "2-й мкр. 55, ​Жилой дом",
+            "description": "Алтынсарина-Куанышбаева",
+            "latitude": 43.229662,
+            "longitude": 76.858445,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 420,
+            "created_at": "2022-10-10T05:33:21.926682Z",
+            "updated_at": "2023-09-26T06:55:41.946347Z",
+            "plan_count": 0,
+            "camera_count": 1,
+            "category": {
+                "name": "Перекрестки и улицы",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
             },
-            "video_analytics": {
-                "modules": [
-                    {
-                        "config": {
-                            "roi": [
-                                {
-                                    "id": "cdfab135-b00b-468d-b57d-f21838cef827",
-                                    "name": "Скопление людей",
-                                    "polygon": [
-                                        0.2455012853470437,
-                                        0.2557077625570776,
-                                        0.2442159383033419,
-                                        0.545662100456621,
-                                        0.33547557840616965,
-                                        0.541095890410959,
-                                        0.4318766066838046,
-                                        0.9817351598173516,
-                                        0.7892030848329049,
-                                        0.997716894977169,
-                                        0.9473007712082262,
-                                        0.7146118721461188,
-                                        0.7082262210796915,
-                                        0.4474885844748858,
-                                        0.8367609254498715,
-                                        0.365296803652968,
-                                        0.7043701799485861,
-                                        0.2785388127853881,
-                                        0.5077120822622108,
-                                        0.2009132420091324,
-                                        0.2544987146529563,
-                                        0.2465753424657534
-                                    ],
-                                    "situation_id": "fa6493ae-d0c5-4bc5-98d1-98bcf8d9bbfa",
-                                    "obj_class_type": 1,
-                                    "min_event_interval": 300,
-                                    "obj_class_threshold": 30,
-                                    "watch_people_activity": false
-                                }
-                            ],
-                            "lines": [],
-                            "min_detection_size": 0.03
-                        },
-                        "module": "SituationAnalyticsModule"
-                    }
-                ],
-                "version": 5
-            },
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 7
-            },
-            "ptz": {},
-            "place_id": 340,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "dp-archive",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "d1f233580cbcd207",
-            "id": "c6129ce0-ec36-46ed-9d0e-77cdca9000fa",
-            "created_at": "2022-10-10T05:32:56.568030Z",
-            "updated_at": "2024-07-03T08:57:23.814078Z",
-            "snapshot_url": "https://d1f233580cbcd207.esvm.kz/s3/vab/2024/7/4/c6129ce0-ec36-46ed-9d0e-77cdca9000fa.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9jNjEyOWNlMC1lYzM2LTQ2ZWQtOWQwZS03N2NkY2E5MDAwZmEuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.ipAW3JzxsJNFRiH15u6LeCpoUcSSAlXFomhvDElfxX0",
-            "origin": {
-                "place_id": 340,
-                "place_name": "ул.Бузурбаева, ул.Гоголя",
-                "place_description": null,
-                "place_latitude": 43.261111,
-                "place_longitude": 76.964968,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект СВМ ММС 1103",
+                    "id": 10
+                }
+            ]
         },
         {
-            "name": "135 High School, Камера-11",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=11&subtype=1"
+            "name": "​2-я Многоводная, 17 ЯСЛИ-САД №107",
+            "description": "Многоводная улица, 17, Алматы",
+            "latitude": 43.257192,
+            "longitude": 76.973465,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 6985,
+            "created_at": "2023-06-20T12:44:56.345651Z",
+            "updated_at": "2024-05-22T12:33:00.896028Z",
+            "plan_count": 0,
+            "camera_count": 19,
+            "category": {
+                "name": "Ясли-сады",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "bb393fcc-6e14-451b-aaee-89bb3bc10ff8",
-            "created_at": "2024-02-16T05:40:06.224103Z",
-            "updated_at": "2024-06-13T10:56:22.620916Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/bb393fcc-6e14-451b-aaee-89bb3bc10ff8.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9iYjM5M2ZjYy02ZTE0LTQ1MWItYWFlZS04OWJiM2JjMTBmZjguanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.1Nk85j_BqefGGh9JUQvW-70yxCrABXfsRyQYuQCbCLw",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Медеуский р-н",
+                    "id": 2
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
         },
         {
-            "name": "136 High School, Камера-12",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=12&subtype=1"
+            "name": "​3-й микрорайон, 32а ЯСЛИ-САД №33",
+            "description": "42, Алматы",
+            "latitude": 43.223036,
+            "longitude": 76.852225,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 7102,
+            "created_at": "2023-07-01T11:58:34.322389Z",
+            "updated_at": "2024-05-22T12:33:04.793906Z",
+            "plan_count": 0,
+            "camera_count": 16,
+            "category": {
+                "name": "Ясли-сады",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "fd9bef92-6ff2-4efe-a24e-7986c519dc9e",
-            "created_at": "2024-02-16T05:40:25.278903Z",
-            "updated_at": "2024-06-08T02:26:20.061497Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/fd9bef92-6ff2-4efe-a24e-7986c519dc9e.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC9mZDliZWY5Mi02ZmYyLTRlZmUtYTI0ZS03OTg2YzUxOWRjOWUuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.9xkLsE9bEaEc019vbIxHc_W_2I52vwdNEXgYbfWgCrM",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
         },
         {
-            "name": "137 High School, Камера-13",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=13&subtype=1"
+            "name": "3-й микрорайон, 37Б ЯСЛИ-САД №49",
+            "description": "37Б, Алматы",
+            "latitude": 43.225399,
+            "longitude": 76.852587,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 7104,
+            "created_at": "2023-07-01T11:58:36.595962Z",
+            "updated_at": "2024-05-22T12:33:05.079704Z",
+            "plan_count": 0,
+            "camera_count": 14,
+            "category": {
+                "name": "Ясли-сады",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
-            },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "611dd1b9-9e0f-4b4e-87f7-ca21efcbc248",
-            "created_at": "2024-02-16T05:40:36.634375Z",
-            "updated_at": "2024-06-19T12:56:24.937857Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/611dd1b9-9e0f-4b4e-87f7-ca21efcbc248.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC82MTFkZDFiOS05ZTBmLTRiNGUtODdmNy1jYTIxZWZjYmMyNDguanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ.Ws2D5XDcK4C8rTlU_F7Tk7LB1uNe0KEOy8CY8JZRVG4",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
-            },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
         },
         {
-            "name": "138 High School, Камера-14",
-            "source": {
-                "url": "rtsp://125:125hsAlmaty@10.128.109.129:554/cam/realmonitor?channel=14&subtype=1"
+            "name": "4-й мкр. 26 ​Малоэтажный жилой дом",
+            "description": "Сквер за кинотеатром \"Сары Арка\" Западная",
+            "latitude": 43.228288,
+            "longitude": 76.857494,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 424,
+            "created_at": "2022-10-10T05:33:23.028610Z",
+            "updated_at": "2023-09-19T09:49:36.564606Z",
+            "plan_count": 0,
+            "camera_count": 2,
+            "category": {
+                "name": "Перекрестки и улицы",
+                "parent_id": 307,
+                "id": 5,
+                "path": "307.5"
             },
-            "video_analytics": null,
-            "video_streaming": {
-                "by_event": false,
-                "storage_depth": 30
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект СВМ ММС 1103",
+                    "id": 10
+                }
+            ]
+        },
+        {
+            "name": "4-я ул. 2/1, ​сооружение",
+            "description": "ОВН 204    Пересечение улиц Кенесбаева и Кыдырова",
+            "latitude": 43.198373,
+            "longitude": 76.829582,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 3951,
+            "created_at": "2022-12-01T16:41:26.912616Z",
+            "updated_at": "2023-12-05T11:38:32.928332Z",
+            "plan_count": 0,
+            "camera_count": 2,
+            "category": {
+                "name": "камеры СВМ",
+                "parent_id": 5,
+                "id": 31,
+                "path": "307.5.31"
             },
-            "ptz": null,
-            "place_id": 21018,
-            "onvif_host": null,
-            "onvif_port": null,
-            "onvif_login": null,
-            "onvif_password": null,
-            "scheduler_group": "default",
-            "scheduler_tags": [],
-            "state": "active",
-            "plan_x": null,
-            "plan_y": null,
-            "plan_id": null,
-            "capacitygroup_token": "5c57af20a034a24a",
-            "id": "29cad0e6-c1c7-4bd1-a811-a2b9561a8579",
-            "created_at": "2024-02-16T05:40:48.507107Z",
-            "updated_at": "2024-06-19T12:56:24.937857Z",
-            "snapshot_url": "https://5c57af20a034a24a.esvm.kz/s3/vab/2024/7/4/29cad0e6-c1c7-4bd1-a811-a2b9561a8579.jpeg?ticket=eyJrZXkiOiIyMDI0LzcvNC8yOWNhZDBlNi1jMWM3LTRiZDEtYTgxMS1hMmI5NTYxYTg1NzkuanBlZyIsInRzIjoxNzIwMDcwMDMxLCJ0dGwiOjkwMC4wfQ._gqEToqSodUtjj_Hoo6A061v_CL6U79raZxUnrRb4kg",
-            "origin": {
-                "place_id": 21018,
-                "place_name": "г.Алматы, ул.Тайторы батыра 144, 125 High School",
-                "place_description": "Алматы",
-                "place_latitude": 43.21418416400778,
-                "place_longitude": 76.82619142587549,
-                "plan_id": null,
-                "plan_name": null
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Наурызбайский р-н",
+                    "id": 9
+                },
+                {
+                    "name": "Проект СВМ ММС 3050",
+                    "id": 12
+                }
+            ]
+        },
+        {
+            "name": "4-я ул. 41, Алатау-Кус",
+            "description": "ОВН 203    Пересечение улиц Кунаева и 4-я, магазин «Алатау кус»",
+            "latitude": 43.194626,
+            "longitude": 76.83515,
+            "cohort_tracking": false,
+            "group_id": 74,
+            "id": 3950,
+            "created_at": "2022-12-01T16:41:24.596441Z",
+            "updated_at": "2023-12-05T11:38:32.784572Z",
+            "plan_count": 0,
+            "camera_count": 2,
+            "category": {
+                "name": "камеры СВМ",
+                "parent_id": 5,
+                "id": 31,
+                "path": "307.5.31"
             },
-            "state_reason": "scheduler_action"
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Наурызбайский р-н",
+                    "id": 9
+                },
+                {
+                    "name": "Проект СВМ ММС 3050",
+                    "id": 12
+                }
+            ]
+        },
+        {
+            "name": "5-й микрорайон, 37а ЯСЛИ-САД №154",
+            "description": "микрорайон 5-й, 37А, Алматы",
+            "latitude": 43.232263,
+            "longitude": 76.864574,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 7239,
+            "created_at": "2023-07-05T08:47:08.371821Z",
+            "updated_at": "2024-05-22T12:33:06.567581Z",
+            "plan_count": 0,
+            "camera_count": 23,
+            "category": {
+                "name": "Ясли-сады",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
+        },
+        {
+            "name": "5-й микрорайон, 46 ЯСЛИ-САД №174",
+            "description": "микрорайон 5-й, 46, Алматы",
+            "latitude": 43.231838,
+            "longitude": 76.865205,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 7199,
+            "created_at": "2023-07-05T08:47:01.868154Z",
+            "updated_at": "2024-05-22T12:33:06.279989Z",
+            "plan_count": 0,
+            "camera_count": 32,
+            "category": {
+                "name": "Ясли-сады",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
+        },
+        {
+            "name": "5-й микрорайон, 49/1 ЯСЛИ-САД №135",
+            "description": "микрорайон 5-й, 49/1, Алматы",
+            "latitude": 43.232798,
+            "longitude": 76.862319,
+            "cohort_tracking": false,
+            "group_id": 73,
+            "id": 7265,
+            "created_at": "2023-07-12T10:05:12.218270Z",
+            "updated_at": "2024-05-22T12:33:07.158027Z",
+            "plan_count": 2,
+            "camera_count": 10,
+            "category": {
+                "name": "Ясли-сады",
+                "parent_id": 19,
+                "id": 235,
+                "path": "19.235"
+            },
+            "kind": null,
+            "tags": [
+                {
+                    "name": "Ауэзовский р-н",
+                    "id": 3
+                },
+                {
+                    "name": "Проект Гос УТО",
+                    "id": 48
+                },
+                {
+                    "name": "Проект НЛС-НИТ",
+                    "id": 187
+                }
+            ]
         }
     ]
 }

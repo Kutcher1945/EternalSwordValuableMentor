@@ -1,3 +1,4 @@
+import os
 import requests
 import psycopg2
 import json
@@ -15,12 +16,15 @@ DB_NAME = 'sitcenter_postgis_datalake'
 DB_USER = 'la_noche_estrellada'
 DB_PASSWORD = 'Cfq,thNb13@'
 
+# Directory to save images
+IMAGE_DIR = 'camera_snapshots'
+
 # Logging configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
-# Cache to store camera IDs
-camera_id_cache = set()
+# Ensure the image directory exists
+os.makedirs(IMAGE_DIR, exist_ok=True)
 
 # Function to create table if not exists
 def create_table_if_not_exists():
@@ -291,6 +295,9 @@ def insert_data_into_db(data):
         # Check if geom is NULL and set is_deleted to TRUE if it is
         set_is_deleted_if_geom_null(cursor, data["id"])
 
+        # Download the image
+        download_image(data.get("snapshot_url"), data.get("id"))
+
     except psycopg2.IntegrityError as e:
         logger.error(f"IntegrityError while inserting/updating data: {str(e)}")
         conn.rollback()
@@ -312,6 +319,23 @@ def set_is_deleted_if_geom_null(cursor, camera_id):
     deleted_camera_id = cursor.fetchone()
     if deleted_camera_id:
         logger.info(f"Camera ID {deleted_camera_id[0]} set to deleted due to NULL geom.")
+
+def download_image(url, camera_id):
+    if not url:
+        logger.warning(f"No snapshot URL provided for camera ID {camera_id}. Skipping download.")
+        return
+
+    try:
+        response = requests.get(url, stream=True)
+        response.raise_for_status()
+
+        image_path = os.path.join(IMAGE_DIR, f"{camera_id}.jpg")
+        with open(image_path, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        logger.info(f"Downloaded snapshot for camera ID {camera_id}")
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Failed to download snapshot for camera ID {camera_id}: {str(e)}")
 
 @retry(wait_exponential_multiplier=1000, wait_exponential_max=10000, stop_max_attempt_number=5)
 def get_cameras_data_with_retry(url, token, cursor=None):
@@ -366,7 +390,6 @@ def refresh_token_periodically():
 def process_camera(camera, token):
     if camera is not None:
         insert_data_into_db(camera)
-        camera_id_cache.add(camera["id"])
         return camera["id"]
     else:
         logger.error("Received None camera data to process.")
@@ -398,33 +421,6 @@ def mark_camera_as_deleted(camera_id):
         cursor.close()
         conn.close()
 
-def compare_and_mark_deleted():
-    global camera_id_cache
-    try:
-        conn = psycopg2.connect(
-            host=DB_HOST,
-            port=DB_PORT,
-            dbname=DB_NAME,
-            user=DB_USER,
-            password=DB_PASSWORD
-        )
-        cursor = conn.cursor()
-        cursor.execute("SELECT camera_id FROM esvm_cameras WHERE is_deleted = FALSE")
-        all_camera_ids = {row[0] for row in cursor.fetchall()}
-        for camera_id in all_camera_ids - camera_id_cache:
-            mark_camera_as_deleted(camera_id)
-            logger.info(f"Camera ID set to is_deleted: {camera_id}")
-        cursor.close()
-        conn.close()
-    except Exception as e:
-        logger.error(f"Failed to mark cameras as deleted: {str(e)}")
-
-def compare_and_mark_deleted_periodically():
-    while True:
-        time.sleep(2100)  # Sleep for 35 minutes (35 * 60 = 2100 seconds)
-        compare_and_mark_deleted()
-        camera_id_cache.clear()
-
 # URL and credentials to obtain initial token
 token_url = "https://esvm.kz/api/v1/token"
 login = "cra_api@esvm.kz"
@@ -448,14 +444,11 @@ if access_token:
     token_refresh_thread = threading.Thread(target=refresh_token_periodically, daemon=True)
     token_refresh_thread.start()
 
-    # Start the periodic comparison thread
-    comparison_thread = threading.Thread(target=compare_and_mark_deleted_periodically, daemon=True)
-    comparison_thread.start()
-
     while True:
         try:
             # Start fetching cameras data
             cursor = None
+            existing_camera_ids = set()  # Keep track of camera_ids fetched from the API
             while True:
                 cameras_data = get_cameras_data_with_retry(cameras_url, access_token, cursor)
                 if cameras_data:
@@ -466,7 +459,9 @@ if access_token:
                         futures = [executor.submit(process_camera, camera, access_token) for camera in cameras_data["cameras"]]
                         for future in tqdm(as_completed(futures), total=total_cameras, desc="Processing cameras"):
                             try:
-                                future.result()
+                                camera_id = future.result()
+                                if camera_id:
+                                    existing_camera_ids.add(camera_id)
                             except Exception as e:
                                 logger.error(f"Error processing camera: {e}")
 
@@ -476,6 +471,20 @@ if access_token:
                         break
                 else:
                     break
+
+            # Mark cameras as deleted if they are not found in the latest API response
+            conn = psycopg2.connect(
+                host=DB_HOST,
+                port=DB_PORT,
+                dbname=DB_NAME,
+                user=DB_USER,
+                password=DB_PASSWORD
+            )
+            cursor = conn.cursor()
+            cursor.execute("SELECT camera_id FROM esvm_cameras WHERE is_deleted = FALSE")
+            all_camera_ids = {row[0] for row in cursor.fetchall()}
+            for camera_id in all_camera_ids - existing_camera_ids:
+                mark_camera_as_deleted(camera_id)
 
         except requests.exceptions.HTTPError as e:
             if e.response.status_code == 401:
