@@ -4,6 +4,7 @@ import time
 from retrying import retry
 from tqdm import tqdm
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Database connection parameters
 DB_HOST = '172.30.227.205'
@@ -115,6 +116,51 @@ def extract_project_ids(tags):
             project_ids.append(project_map[tag_name])
     return project_ids
 
+def get_existing_place(place_id):
+    try:
+        conn = psycopg2.connect(
+            host=DB_HOST,
+            port=DB_PORT,
+            dbname=DB_NAME,
+            user=DB_USER,
+            password=DB_PASSWORD
+        )
+        cursor = conn.cursor()
+
+        select_query = "SELECT * FROM esvm_places WHERE place_id = %s"
+        cursor.execute(select_query, (place_id,))
+        existing_record = cursor.fetchone()
+
+        column_names = [desc[0] for desc in cursor.description]
+        existing_place = dict(zip(column_names, existing_record)) if existing_record else None
+
+        return existing_place
+    except Exception as e:
+        print("Failed to get existing place from the database:", str(e))
+        return None
+    finally:
+        cursor.close()
+        conn.close()
+
+def update_place_if_needed(cursor, place_id, place_data, existing_place):
+    columns_to_update = []
+    values_to_update = []
+
+    for column, new_value in place_data.items():
+        if existing_place[column] != new_value:
+            columns_to_update.append(f"{column} = %s")
+            values_to_update.append(new_value)
+
+    if columns_to_update:
+        update_query = f"""
+        UPDATE esvm_places
+        SET {", ".join(columns_to_update)}
+        WHERE place_id = %s
+        """
+        values_to_update.append(place_id)
+        cursor.execute(update_query, tuple(values_to_update))
+        print(f"Updated place with place_id: {place_id}")
+
 def insert_places_data_into_db(place_data):
     try:
         conn = psycopg2.connect(
@@ -132,25 +178,6 @@ def insert_places_data_into_db(place_data):
             camera_count, category, cohort_tracking, created_at, 
             group_id, kind, plan_count, tags, updated_at, district_id
         ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-        """
-
-        update_place_query = """
-        UPDATE esvm_places
-        SET name = %s,
-            description = %s,
-            latitude = %s,
-            longitude = %s,
-            camera_count = %s,
-            category = %s,
-            cohort_tracking = %s,
-            created_at = %s,
-            group_id = %s,
-            kind = %s,
-            plan_count = %s,
-            tags = %s,
-            updated_at = %s,
-            district_id = %s
-        WHERE place_id = %s
         """
 
         insert_project_place_query = """
@@ -177,22 +204,27 @@ def insert_places_data_into_db(place_data):
         district_id = extract_district_id(tags)
         project_ids = extract_project_ids(tags)
 
-        # Check if the place already exists in the database
-        select_query = "SELECT place_id FROM esvm_places WHERE place_id = %s"
-        cursor.execute(select_query, (place_id,))
-        existing_record = cursor.fetchone()
+        existing_place = get_existing_place(place_id)
 
-        if existing_record:
-            # Update the existing record
-            cursor.execute(update_place_query, (
-                name, description, latitude, longitude, 
-                camera_count, category, cohort_tracking, created_at, 
-                group_id, kind, plan_count, tags_json, updated_at,
-                district_id, place_id
-            ))
-            print(f"Updated place with place_id: {place_id}")
+        if existing_place:
+            place_data_for_comparison = {
+                "name": name,
+                "description": description,
+                "latitude": latitude,
+                "longitude": longitude,
+                "camera_count": camera_count,
+                "category": category,
+                "cohort_tracking": cohort_tracking,
+                "created_at": created_at,
+                "group_id": group_id,
+                "kind": kind,
+                "plan_count": plan_count,
+                "tags": tags_json,
+                "updated_at": updated_at,
+                "district_id": district_id
+            }
+            update_place_if_needed(cursor, place_id, place_data_for_comparison, existing_place)
         else:
-            # Insert a new record
             cursor.execute(insert_place_query, (
                 place_id, name, description, latitude, longitude, 
                 camera_count, category, cohort_tracking, created_at, 
@@ -201,11 +233,16 @@ def insert_places_data_into_db(place_data):
             ))
             print(f"Inserted new place with place_id: {place_id}")
 
-        # Insert into esvm_project_places
         if project_ids:
             for project_id in project_ids:
-                cursor.execute(insert_project_place_query, (place_id, project_id))
-                print(f"Inserted project_place record with place_id: {place_id} and project_id: {project_id}")
+                check_project_place_query = """
+                SELECT 1 FROM esvm_project_places
+                WHERE place_id = %s AND project_id = %s
+                """
+                cursor.execute(check_project_place_query, (place_id, project_id))
+                if cursor.fetchone() is None:
+                    cursor.execute(insert_project_place_query, (place_id, project_id))
+                    print(f"Inserted project_place record with place_id: {place_id} and project_id: {project_id}")
 
         conn.commit()
     except psycopg2.IntegrityError as e:
@@ -274,6 +311,10 @@ def get_existing_place_ids():
         cursor.close()
         conn.close()
 
+def process_place(place):
+    insert_places_data_into_db(place)
+    return place.get("id")
+
 # Main function to insert places data into the database
 def main():
     token_url = "https://esvm.kz/api/v1/token"
@@ -295,10 +336,11 @@ def main():
                 if not places_data:
                     break
 
-                for place in tqdm(places_data, desc="Inserting/Updating Places Data"):
-                    place_id = place.get("id")
-                    insert_places_data_into_db(place)
-                    existing_place_ids.add(place_id)
+                with ThreadPoolExecutor(max_workers=10) as executor:
+                    futures = [executor.submit(process_place, place) for place in places_data]
+                    for future in tqdm(as_completed(futures), total=len(futures), desc="Inserting/Updating Places Data"):
+                        place_id = future.result()
+                        existing_place_ids.add(place_id)
 
                 if not cursor:
                     break
