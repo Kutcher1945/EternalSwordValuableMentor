@@ -5,6 +5,17 @@ from retrying import retry
 from tqdm import tqdm
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import logging
+
+# Setup logging
+logging.basicConfig(
+    level=logging.INFO,  # Set logging level to INFO; change to DEBUG for more detailed logs
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("data_ingestion.log"),  # Log to a file
+        logging.StreamHandler()  # Also log to console
+    ]
+)
 
 # Database connection parameters
 DB_HOST = '172.30.227.205'
@@ -25,7 +36,7 @@ district_map = {
     "Турксибский р-н": 8
 }
 
-# Project mappings (example, you need to update with actual project IDs)
+# Project mappings
 project_map = {
     "Остановки школьные": 1,
     "Проект подземные переходы": 2,
@@ -44,6 +55,25 @@ project_map = {
     "Проект частные УТО": 15,
     "КСБ школы": 16
 }
+
+def extract_district_id(tags):
+    if not tags:
+        return None
+    for tag in tags:
+        tag_name = tag.get("name")
+        if tag_name in district_map:
+            return district_map[tag_name]
+    return None
+
+def extract_project_ids(tags):
+    project_ids = []
+    if not tags:
+        return project_ids
+    for tag in tags:
+        tag_name = tag.get("name")
+        if tag_name in project_map:
+            project_ids.append(project_map[tag_name])
+    return project_ids
 
 def create_tables_if_not_exists():
     try:
@@ -87,34 +117,13 @@ def create_tables_if_not_exists():
         cursor.execute(create_places_table_query)
         cursor.execute(create_project_places_table_query)
         conn.commit()
-        print("Tables 'esvm_places' and 'esvm_project_places' created successfully or already exist.")
+        logging.info("Tables 'esvm_places' and 'esvm_project_places' created successfully or already exist.")
     except Exception as e:
-        print("Failed to create tables:", str(e))
+        logging.error("Failed to create tables: %s", str(e))
         conn.rollback()
     finally:
         cursor.close()
         conn.close()
-
-def extract_district_id(tags):
-    if not tags:
-        return None
-
-    for tag in tags:
-        tag_name = tag.get("name")
-        if tag_name in district_map:
-            return district_map[tag_name]
-    return None
-
-def extract_project_ids(tags):
-    project_ids = []
-    if not tags:
-        return project_ids
-
-    for tag in tags:
-        tag_name = tag.get("name")
-        if tag_name in project_map:
-            project_ids.append(project_map[tag_name])
-    return project_ids
 
 def get_existing_place(place_id):
     try:
@@ -136,7 +145,7 @@ def get_existing_place(place_id):
 
         return existing_place
     except Exception as e:
-        print("Failed to get existing place from the database:", str(e))
+        logging.error("Failed to get existing place from the database: %s", str(e))
         return None
     finally:
         cursor.close()
@@ -159,7 +168,7 @@ def update_place_if_needed(cursor, place_id, place_data, existing_place):
         """
         values_to_update.append(place_id)
         cursor.execute(update_query, tuple(values_to_update))
-        print(f"Updated place with place_id: {place_id}")
+        logging.info(f"Updated place with place_id: {place_id}")
 
 def insert_places_data_into_db(place_data):
     try:
@@ -192,17 +201,27 @@ def insert_places_data_into_db(place_data):
         latitude = place_data.get("latitude")
         longitude = place_data.get("longitude")
         camera_count = place_data.get("camera_count")
-        category = json.dumps(place_data.get("category")) if place_data.get("category") else None
+        
+        # Convert category and kind to JSON if they are dictionaries
+        category = json.dumps(place_data.get("category")) if isinstance(place_data.get("category"), dict) else None
+        kind = json.dumps(place_data.get("kind")) if isinstance(place_data.get("kind"), dict) else None
+        
         cohort_tracking = place_data.get("cohort_tracking")
         created_at = place_data.get("created_at")
         group_id = place_data.get("group_id")
-        kind = place_data.get("kind")
         plan_count = place_data.get("plan_count")
+        
+        # Serialize tags to JSON
         tags = place_data.get("tags")
         tags_json = json.dumps(tags) if tags else None
+        
         updated_at = place_data.get("updated_at")
         district_id = extract_district_id(tags)
         project_ids = extract_project_ids(tags)
+
+        # Log the data for debugging
+        logging.info(f"Inserting place_id: {place_id}, name: {name}")
+        logging.debug(f"category: {category}, kind: {kind}, tags: {tags_json}, other fields: {place_data}")
 
         existing_place = get_existing_place(place_id)
 
@@ -231,7 +250,7 @@ def insert_places_data_into_db(place_data):
                 group_id, kind, plan_count, tags_json, updated_at,
                 district_id
             ))
-            print(f"Inserted new place with place_id: {place_id}")
+            logging.info(f"Inserted new place with place_id: {place_id}")
 
         if project_ids:
             for project_id in project_ids:
@@ -242,14 +261,17 @@ def insert_places_data_into_db(place_data):
                 cursor.execute(check_project_place_query, (place_id, project_id))
                 if cursor.fetchone() is None:
                     cursor.execute(insert_project_place_query, (place_id, project_id))
-                    print(f"Inserted project_place record with place_id: {place_id} and project_id: {project_id}")
+                    logging.info(f"Inserted project_place record with place_id: {place_id} and project_id: {project_id}")
 
         conn.commit()
     except psycopg2.IntegrityError as e:
-        print(f"IntegrityError while inserting/updating data: {str(e)}")
+        logging.error(f"IntegrityError while inserting/updating data: {str(e)}")
         conn.rollback()
     except Exception as e:
-        print("Failed to insert/update data into the database:", str(e))
+        # Log the entire place_data to debug the field causing the issue
+        logging.error(f"Failed to insert/update data into the database for place_id: {place_id}")
+        logging.error(f"Problematic data: {place_data}")
+        logging.error(f"Error: {str(e)}")
         conn.rollback()
     finally:
         cursor.close()
@@ -266,6 +288,15 @@ def get_places_data_with_retry(url, token, cursor=None):
     cursor = data.get("pagination", {}).get("cursor")
     return places_data, cursor
 
+def refresh_token(url, login, password):
+    while True:
+        token = get_token(url, login, password)
+        if token:
+            logging.info("New token obtained: %s", token)
+            break
+        time.sleep(5)
+    return token
+
 def get_token(url, login, password):
     payload = {
         "grant_type": "password",
@@ -277,17 +308,8 @@ def get_token(url, login, password):
         data = response.json()
         return data.get("access_token")
     else:
-        print("Failed to obtain token. Status code:", response.status_code)
+        logging.error("Failed to obtain token. Status code: %s", response.status_code)
         return None
-
-def refresh_token(url, login, password):
-    while True:
-        token = get_token(url, login, password)
-        if token:
-            print("New token obtained:", token)
-            break
-        time.sleep(5)
-    return token
 
 def get_existing_place_ids():
     try:
@@ -305,7 +327,7 @@ def get_existing_place_ids():
         existing_place_ids = {row[0] for row in rows}  # Using set comprehension to store unique place IDs
         return existing_place_ids
     except Exception as e:
-        print("Failed to get existing place IDs from the database:", str(e))
+        logging.error("Failed to get existing place IDs from the database: %s", str(e))
         return set()
     finally:
         cursor.close()
@@ -315,7 +337,6 @@ def process_place(place):
     insert_places_data_into_db(place)
     return place.get("id")
 
-# Main function to insert places data into the database
 def main():
     token_url = "https://esvm.kz/api/v1/token"
     places_url = "https://esvm.kz/api/v1/places"
@@ -345,7 +366,7 @@ def main():
                 if not cursor:
                     break
         except Exception as e:
-            print("Failed to retrieve or insert data:", str(e))
+            logging.error("Failed to retrieve or insert data: %s", str(e))
         finally:
             time.sleep(10)  # Wait for 10 seconds before restarting the loop
 
