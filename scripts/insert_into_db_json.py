@@ -6,7 +6,7 @@ conn = psycopg2.connect(
     dbname="sitcenter_postgis_datalake",
     user="la_noche_estrellada",
     password="Cfq,thNb13@",
-    host="10.100.200.102",
+    host="10.100.200.150",
     port="5439"
 )
 

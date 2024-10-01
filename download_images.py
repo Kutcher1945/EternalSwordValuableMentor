@@ -7,7 +7,7 @@ import logging
 from tqdm import tqdm
 
 # Database connection details
-db_host = "10.100.200.102"
+db_host = "10.100.200.150"
 db_port = "5439"
 db_name = "sitcenter_postgis_datalake"
 db_user = "la_noche_estrellada"

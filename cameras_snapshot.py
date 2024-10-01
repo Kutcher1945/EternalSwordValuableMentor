@@ -10,7 +10,7 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Database connection parameters
-DB_HOST = '10.100.200.102'
+DB_HOST = '10.100.200.150'
 DB_PORT = '5439'
 DB_NAME = 'sitcenter_postgis_datalake'
 DB_USER = 'la_noche_estrellada'
