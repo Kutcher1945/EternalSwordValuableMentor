@@ -6,7 +6,7 @@ from retrying import retry
 from tqdm import tqdm
 
 # Database connection parameters
-DB_HOST = '172.30.227.205'
+DB_HOST = '10.100.200.102'
 DB_PORT = '5439'
 DB_NAME = 'sitcenter_postgis_datalake'
 DB_USER = 'la_noche_estrellada'
