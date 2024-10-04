@@ -375,7 +375,7 @@ def start_processing_loop():
             logger.error("No camera IDs found. Exiting...")
             break
 
-        with ThreadPoolExecutor(max_workers=10) as executor:
+        with ThreadPoolExecutor(max_workers=5) as executor:
             futures = [executor.submit(process_camera, camera_id) for camera_id in camera_ids]
             for future in tqdm(as_completed(futures), total=len(camera_ids), desc="Processing cameras"):
                 try:
